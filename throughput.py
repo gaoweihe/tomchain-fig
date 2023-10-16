@@ -51,6 +51,7 @@ throughput_plot = sns.barplot(x='Category', y='TPS', data=throughput_df, yerr=th
 throughput_plot.set(xlabel='Category',
          ylabel='TPS',
          title='Throughput')
+plt.yscale('log')
 plt.show()
 plt.cla() 
 

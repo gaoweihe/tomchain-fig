@@ -78,6 +78,7 @@ sns.barplot(x='Category', y='CommitTime', data=breakup_df, bottom=breakup_df['Di
 # Add labels, title, and legend
 plt.xlabel('Category') 
 plt.ylabel('Time (ms)')
+plt.yscale('log')
 plt.title('Time Break-up')
 plt.legend()
 

@@ -50,6 +50,7 @@ throughput_plot = sns.barplot(x='Category', y='Latency', data=throughput_df, yer
 throughput_plot.set(xlabel='Category',
          ylabel='Latency (ms)',
          title='Latency')
+plt.yscale('log')
 plt.show()
 plt.cla() 
 
