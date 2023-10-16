@@ -47,10 +47,29 @@ throughput_df['PositiveError'] = throughput_df['MaxValues'] - throughput_df['TPS
 throughput_df['NegativeError'] = throughput_df['TPS'] - throughput_df['MinValues']
 throughput_yerr = [throughput_df['NegativeError'].values, throughput_df['PositiveError'].values]
 
-throughput_plot = sns.barplot(x='Category', y='TPS', data=throughput_df, yerr=throughput_yerr, capsize=0.2)
-throughput_plot.set(xlabel='Category',
-         ylabel='TPS',
-         title='Throughput')
+bar_color = 'gray'
+bar_color = 'gray'
+bar_width = 0.4
+ticks_fontsize = 13
+labels_fontsize = 16
+legend_fontsize = 13
+title_fontsize = 17
+
+throughput_plot = sns.barplot(x='Category', y='TPS', data=throughput_df, yerr=throughput_yerr, capsize=0.2, color=bar_color, width=bar_width)
+
+# List of hatches for each bar
+hatches = ['/', 'O', 'x', '|', '\\', '*', 'o', '+']
+# Loop over the bars
+for i, bar in enumerate(throughput_plot.patches):
+    # Set a different hatch for each bar
+    hatch = hatches[i % len(hatches)]  # Cycle through the list of hatches
+    bar.set_hatch(hatch)
+
+plt.xlabel('Category', fontsize=labels_fontsize)
+plt.ylabel('TPS', fontsize=labels_fontsize)
+plt.xticks(fontsize=ticks_fontsize)
+plt.yticks(fontsize=ticks_fontsize)
+plt.title('Throughput', fontsize=title_fontsize)
 plt.yscale('log')
 plt.show()
 plt.cla() 

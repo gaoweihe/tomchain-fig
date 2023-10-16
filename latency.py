@@ -41,16 +41,35 @@ latency_data = {
     'MaxValues': [tomchain_max_latency, 90000, 20000, 254, 538, 12000],
     'MinValues': [tomchain_min_latency, 90000, 16000, 254, 538, 12000]
 }
-throughput_df = DataFrame(latency_data, columns=['Category', 'Latency', 'MaxValues', 'MinValues'])
-throughput_df['PositiveError'] = throughput_df['MaxValues'] - throughput_df['Latency']
-throughput_df['NegativeError'] = throughput_df['Latency'] - throughput_df['MinValues']
-throughput_yerr = [throughput_df['NegativeError'].values, throughput_df['PositiveError'].values]
+latency_df = DataFrame(latency_data, columns=['Category', 'Latency', 'MaxValues', 'MinValues'])
+latency_df['PositiveError'] = latency_df['MaxValues'] - latency_df['Latency']
+latency_df['NegativeError'] = latency_df['Latency'] - latency_df['MinValues']
+latency_yerr = [latency_df['NegativeError'].values, latency_df['PositiveError'].values]
 
-throughput_plot = sns.barplot(x='Category', y='Latency', data=throughput_df, yerr=throughput_yerr, capsize=0.2)
-throughput_plot.set(xlabel='Category',
-         ylabel='Latency (ms)',
-         title='Latency')
+bar_color = 'gray'
+bar_width = 0.4
+ticks_fontsize = 13
+labels_fontsize = 16
+legend_fontsize = 13
+title_fontsize = 17
+
+latency_plot = sns.barplot(x='Category', y='Latency', data=latency_df, yerr=latency_yerr, capsize=0.2, color=bar_color, width=bar_width)
+
+# List of hatches for each bar
+hatches = ['/', 'O', 'x', '|', '\\', '*', 'o', '+']
+# Loop over the bars
+for i, bar in enumerate(latency_plot.patches):
+    # Set a different hatch for each bar
+    hatch = hatches[i % len(hatches)]  # Cycle through the list of hatches
+    bar.set_hatch(hatch)
+
+
 plt.yscale('log')
+plt.xticks(fontsize=ticks_fontsize)
+plt.yticks(fontsize=ticks_fontsize)
+plt.title('Latency', fontsize=title_fontsize)
+plt.xlabel('Category', fontsize=labels_fontsize)
+plt.ylabel('Latency (ms)', fontsize=labels_fontsize) 
 plt.show()
 plt.cla() 
 

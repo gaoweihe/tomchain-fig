@@ -70,17 +70,44 @@ breakup_data = {
 }
 breakup_df = DataFrame(breakup_data)
 
-sns.barplot(x='Category', y='Overall', data=breakup_df, color='red', label='Overall')
-sns.barplot(x='Category', y='DistributeTime', data=breakup_df, color='blue', label='DistributeTime')
-sns.barplot(x='Category', y='VoteTime', data=breakup_df, bottom=breakup_df['DistributeTime'], color='green', label='VoteTime')
-sns.barplot(x='Category', y='CommitTime', data=breakup_df, bottom=breakup_df['DistributeTime'] + breakup_df['VoteTime'], color='yellow', label='CommitTime')
+bar_color = 'gray'
+bar_width = 0.4
+ticks_fontsize = 13
+labels_fontsize = 16
+legend_fontsize = 13
+title_fontsize = 17
+
+# Define different hatch patterns for each segment within each bar
+hatches = ['///', '+++','xxx', '\\\\\\', '---', '***', '...', 'ooo']
+
+overall_plot = sns.barplot(x='Category', y='Overall', data=breakup_df, label='Overall', width=bar_width, color=bar_color)
+dist_plot = sns.barplot(x='Category', y='DistributeTime', data=breakup_df, label='DistributeTime', width=bar_width, color=bar_color)
+vote_plot = sns.barplot(x='Category', y='VoteTime', data=breakup_df, bottom=breakup_df['DistributeTime'], label='VoteTime', width=bar_width, color=bar_color)
+commit_plot = sns.barplot(x='Category', y='CommitTime', data=breakup_df, bottom=breakup_df['DistributeTime'] + breakup_df['VoteTime'], label='CommitTime', width=bar_width, color=bar_color)
+plots = [overall_plot, dist_plot, vote_plot, commit_plot]
+
+for curr_plot in plots:
+    # Applying hatches to each bar segment
+    total_bars = len(curr_plot.patches)
+    for i, bar in enumerate(curr_plot.patches):
+        # Calculate the appropriate hatch pattern for this bar segment
+        pattern = hatches[i % len(hatches)]
+        # Skip the bars from the first set (bottom layer), as they are already drawn
+        if i < total_bars:
+            pass
+            # continue
+    
+        # Apply the hatch pattern to the bar segment
+        bar.set_hatch(pattern)
 
 # Add labels, title, and legend
-plt.xlabel('Category') 
-plt.ylabel('Time (ms)')
-plt.yscale('log')
-plt.title('Time Break-up')
-plt.legend()
+plt.xticks(fontsize=ticks_fontsize)  # x tick labels
+plt.yticks(fontsize=ticks_fontsize)  # y tick labels
+plt.xlabel('Category', fontsize=labels_fontsize) 
+plt.ylabel('Time (ms)', fontsize=labels_fontsize)
+# plt.yscale('log')
+plt.title('Time Break-up', fontsize=title_fontsize)
+plt.legend(fontsize=legend_fontsize)
 
 plt.show()
 plt.cla()
