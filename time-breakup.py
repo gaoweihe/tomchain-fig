@@ -70,44 +70,85 @@ breakup_data = {
 }
 breakup_df = DataFrame(breakup_data)
 
-bar_color = 'gray'
-bar_width = 0.4
-ticks_fontsize = 13
-labels_fontsize = 16
-legend_fontsize = 13
-title_fontsize = 17
+# pie chart 
+# Setting the overall aesthetics
+sns.set_theme(style="whitegrid")
 
-# Define different hatch patterns for each segment within each bar
-hatches = ['///', '+++','xxx', '\\\\\\', '---', '***', '...', 'ooo']
+# Sample data
+data1 = {'Categories': ['A', 'B', 'C'], 'Values': [15, 30, 45]}
+data2 = {'Categories': ['D', 'E', 'F'], 'Values': [20, 40, 40]}
+data3 = {'Categories': ['G', 'H', 'I'], 'Values': [25, 35, 40]}
 
-overall_plot = sns.barplot(x='Category', y='Overall', data=breakup_df, label='Overall', width=bar_width, color=bar_color)
-dist_plot = sns.barplot(x='Category', y='DistributeTime', data=breakup_df, label='DistributeTime', width=bar_width, color=bar_color)
-vote_plot = sns.barplot(x='Category', y='VoteTime', data=breakup_df, bottom=breakup_df['DistributeTime'], label='VoteTime', width=bar_width, color=bar_color)
-commit_plot = sns.barplot(x='Category', y='CommitTime', data=breakup_df, bottom=breakup_df['DistributeTime'] + breakup_df['VoteTime'], label='CommitTime', width=bar_width, color=bar_color)
-plots = [overall_plot, dist_plot, vote_plot, commit_plot]
+df1 = pandas.DataFrame(data1)
+df2 = pandas.DataFrame(data2)
+df3 = pandas.DataFrame(data3)
 
-for curr_plot in plots:
-    # Applying hatches to each bar segment
-    total_bars = len(curr_plot.patches)
-    for i, bar in enumerate(curr_plot.patches):
-        # Calculate the appropriate hatch pattern for this bar segment
-        pattern = hatches[i % len(hatches)]
-        # Skip the bars from the first set (bottom layer), as they are already drawn
-        if i < total_bars:
-            pass
-            # continue
+# Create a figure with specified size
+fig, axs = plt.subplots(1, 3, figsize=(20, 6))  # 1 row, 3 columns
+
+# Create a color palette
+colors = sns.color_palette("viridis", 3)
+
+# Create the first pie chart using data from df1
+axs[0].pie(df1['Values'], labels=df1['Categories'], autopct='%1.1f%%', startangle=90, colors=colors)
+axs[0].set_title('Pie Chart 1')
+axs[0].axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+
+# Create the second pie chart using data from df2
+axs[1].pie(df2['Values'], labels=df2['Categories'], autopct='%1.1f%%', startangle=90, colors=colors)
+axs[1].set_title('Pie Chart 2')
+axs[1].axis('equal')
+
+# Create the third pie chart using data from df3
+axs[2].pie(df3['Values'], labels=df3['Categories'], autopct='%1.1f%%', startangle=90, colors=colors)
+axs[2].set_title('Pie Chart 3')
+axs[2].axis('equal')
+
+# Improve spacing between subplots
+plt.tight_layout()
+
+# Show the plot
+plt.show()
+
+# bar chart 
+# bar_color = 'gray'
+# bar_width = 0.4
+# ticks_fontsize = 13
+# labels_fontsize = 16
+# legend_fontsize = 13
+# title_fontsize = 17
+
+# # Define different hatch patterns for each segment within each bar
+# hatches = ['///', '+++','xxx', '\\\\\\', '---', '***', '...', 'ooo']
+
+# overall_plot = sns.barplot(x='Category', y='Overall', data=breakup_df, label='Overall', width=bar_width, color=bar_color)
+# dist_plot = sns.barplot(x='Category', y='DistributeTime', data=breakup_df, label='DistributeTime', width=bar_width, color=bar_color)
+# vote_plot = sns.barplot(x='Category', y='VoteTime', data=breakup_df, bottom=breakup_df['DistributeTime'], label='VoteTime', width=bar_width, color=bar_color)
+# commit_plot = sns.barplot(x='Category', y='CommitTime', data=breakup_df, bottom=breakup_df['DistributeTime'] + breakup_df['VoteTime'], label='CommitTime', width=bar_width, color=bar_color)
+# plots = [overall_plot, dist_plot, vote_plot, commit_plot]
+
+# for curr_plot in plots:
+#     # Applying hatches to each bar segment
+#     total_bars = len(curr_plot.patches)
+#     for i, bar in enumerate(curr_plot.patches):
+#         # Calculate the appropriate hatch pattern for this bar segment
+#         pattern = hatches[i % len(hatches)]
+#         # Skip the bars from the first set (bottom layer), as they are already drawn
+#         if i < total_bars:
+#             pass
+#             # continue
     
-        # Apply the hatch pattern to the bar segment
-        bar.set_hatch(pattern)
+#         # Apply the hatch pattern to the bar segment
+#         bar.set_hatch(pattern)
 
-# Add labels, title, and legend
-plt.xticks(fontsize=ticks_fontsize)  # x tick labels
-plt.yticks(fontsize=ticks_fontsize)  # y tick labels
-plt.xlabel('Category', fontsize=labels_fontsize) 
-plt.ylabel('Time (ms)', fontsize=labels_fontsize)
-# plt.yscale('log')
-plt.title('Time Break-up', fontsize=title_fontsize)
-plt.legend(fontsize=legend_fontsize)
+# # Add labels, title, and legend
+# plt.xticks(fontsize=ticks_fontsize)  # x tick labels
+# plt.yticks(fontsize=ticks_fontsize)  # y tick labels
+# plt.xlabel('Category', fontsize=labels_fontsize) 
+# plt.ylabel('Time (ms)', fontsize=labels_fontsize)
+# # plt.yscale('log')
+# plt.title('Time Break-up', fontsize=title_fontsize)
+# plt.legend(fontsize=legend_fontsize)
 
 plt.show()
 plt.cla()

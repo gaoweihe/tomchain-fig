@@ -28,23 +28,25 @@ console_out.close()
 
 throughput_df = DataFrame({'index': x, 'cb': y})
 throughput_df['cb'] = throughput_df['cb'].diff()
+
+dot_color = 'gray'
+line_color = 'gray'
+
 throughput_plot = sns.scatterplot(x="index", y="cb",
-                data=throughput_df, linewidth=0)
-throughput_plot.set(xlabel='time (s)',
-       ylabel='TPS',
-       title='Robustness')
+                data=throughput_df, linewidth=0, color=dot_color)
+
 throughput_plot.axvline(x = 40,    # Line on x = 2
            ymin = 0, # Bottom of the plot
-           ymax = 1) # Top of the plot 
+           ymax = 1, color=line_color) # Top of the plot 
 throughput_plot.axvline(x = 144,    # Line on x = 2
            ymin = 0, # Bottom of the plot
-           ymax = 1) # Top of the plot 
+           ymax = 1, color=line_color) # Top of the plot 
 throughput_plot.axvline(x = 224,    # Line on x = 2
            ymin = 0, # Bottom of the plot
-           ymax = 1) # Top of the plot 
+           ymax = 1, color=line_color) # Top of the plot 
 throughput_plot.axvline(x = 240,    # Line on x = 2
            ymin = 0, # Bottom of the plot
-           ymax = 1) # Top of the plot 
+           ymax = 1, color=line_color) # Top of the plot 
 
 ticks_fontsize = 13
 labels_fontsize = 16
