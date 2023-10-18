@@ -1,0 +1,63 @@
+import pandas as pd
+import seaborn as sns
+import matplotlib
+import matplotlib.pyplot as plt
+matplotlib.use('TkAgg', force=True)
+sns.set_theme(style="whitegrid")
+sns.set_style({'font.family': 'Times New Roman'})
+
+# Create individual dataframes. In practice, these might come from different sources or computations.
+# Here, we're just creating some example data.
+
+# TMCD
+# data1 = {
+#     'x_values': [600, 550, 1030, 1100, 1070, 1078, 1152, 1112, 1011, 1520, 2170],  # 1 to 100
+#     'y_values': [78, 125, 240, 370, 400, 700, 2100, 3013, 3695, 6843, 7630]  # Some calculation to generate values
+# }
+data1 = {
+    'x_values': [600, 550, 1030, 1070, 1078, 1112, 1152, 1520, 2170],  # 1 to 100
+    'y_values': [78, 125, 240, 400, 700, 2100, 3013, 6843, 7630]  # Some calculation to generate values
+}
+df1 = pd.DataFrame(data1)
+
+# SBFT
+data2 = {
+    'x_values': [205, 220, 240, 280, 360, 450],  # 1 to 100
+    'y_values': [16, 141, 250, 438, 500, 516]  # Some calculation to generate values
+}
+df2 = pd.DataFrame(data2)
+
+# Third dataset
+data3 = {
+    'x_values': [1, 2],  # 1 to 100
+    'y_values': [3, 4]  # Some calculation to generate values
+}
+df3 = pd.DataFrame(data3)
+
+line_color = 'gray'
+bar_width = 0.4
+ticks_fontsize = 13
+labels_fontsize = 16
+legend_fontsize = 13
+title_fontsize = 17
+
+# Create a new figure with a certain size
+plt.figure(figsize=(9, 5))
+
+# Plotting the first line
+sns.lineplot(x='x_values', y='y_values', data=df1, label='TMCD', marker='*', color=line_color)
+
+# Plotting the second line
+sns.lineplot(x='x_values', y='y_values', data=df2, label='SBFT', marker='o', color=line_color)
+
+# # Plotting the third line
+# sns.lineplot(x='x_values', y='y_values', data=df3, label='Line 3', marker='x')
+
+# Customizing the visuals
+plt.title('TPS/Latency trade-off', fontsize=title_fontsize)
+plt.xlabel('Latency (ms)', fontsize=labels_fontsize)  # Custom x-axis title
+plt.ylabel('TPS', fontsize=labels_fontsize)  # Custom y-axis title
+plt.legend(title='Category', fontsize=legend_fontsize)  # Adding a legend with a title
+
+# Displaying the plot
+plt.show()

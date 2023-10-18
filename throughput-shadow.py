@@ -3,7 +3,7 @@ from pandas import DataFrame
 import seaborn as sns
 import matplotlib
 import matplotlib.pyplot as plt
-matplotlib.use('TkAgg',force=True)
+matplotlib.use('TkAgg', force=True)
 sns.set_theme(style="whitegrid")
 sns.set_style({'font.family': 'Times New Roman'})
 
@@ -11,7 +11,7 @@ sns.set_style({'font.family': 'Times New Roman'})
 f, ax = plt.subplots(figsize=(9, 5))
 sns.despine(fig=None, ax=None, top=True, right=True, left=False, bottom=False, offset=None, trim=False)
 
-console_out = open("server-9-robustness.out") 
+console_out = open("log/tps-latency/server-9-batch1500.out") 
 all_lines = console_out.readlines() 
 x = []
 y = []
@@ -22,60 +22,69 @@ for index, line in enumerate(all_lines):
 		print(sample_count, " ", str_list[1].strip('\n'), flush=True)
 		# csv_writer.writerow([str_list[1]])
 		x.append(sample_count * 4)
-		y.append(int(str_list[1]) * 2000 / 4)
+		y.append(int(str_list[1]) * 1500 / 4)
 		sample_count = sample_count + 1
 console_out.close() 
 
-throughput_df = DataFrame({'index': x, 'cb': y})
-throughput_df['cb'] = throughput_df['cb'].diff()
+throughput_original_df = DataFrame({'index': x, 'cb': y})
+throughput_original_df['cb'] = throughput_original_df['cb'].diff()
 
-dot_color = 'gray'
-line_color = 'gray'
+# get average throughput from throughput_df
+tomchain_avg_throughput = throughput_original_df['cb'].mean() 
+# get max value of throughput from throughput_df
+tomchain_max_throughput = throughput_original_df['cb'].max()
+# get min value of throughput from throughput_df
+tomchain_min_throughput = throughput_original_df['cb'].min()
 
-throughput_plot = sns.lineplot(x="index", y="cb",
-                data=throughput_df, linewidth=1, color=dot_color)
+throughput_data = {
+    'Category':     ['TomChain', 'Blockene', 'Algorand', 'SBFT', 'PBFT', 'Ethereum', 'Bitcoin'],
+    'TPS':          [tomchain_avg_throughput, 2000, 1000, 378, 204, 10, 7],
+    'MaxValues':    [tomchain_max_throughput, 2000, 1000, 378, 204, 10, 7],
+    'MinValues':    [tomchain_min_throughput, 2000, 1000, 378, 204, 10, 7]
+}
+throughput_df = DataFrame(throughput_data, columns=['Category', 'TPS', 'MaxValues', 'MinValues'])
+throughput_df['PositiveError'] = throughput_df['MaxValues'] - throughput_df['TPS']
+throughput_df['NegativeError'] = throughput_df['TPS'] - throughput_df['MinValues']
+throughput_yerr = [throughput_df['NegativeError'].values, throughput_df['PositiveError'].values]
 
-failure_a_pos = 40
-throughput_plot.axvline(x = failure_a_pos,    # Line on x = 2
-           ymin = 0, # Bottom of the plot
-           ymax = 1, color=line_color) # Top of the plot 
-plt.text(failure_a_pos + 2, plt.gca().get_ylim()[1] * 0.30, 'Failure A'.format(failure_a_pos), 
-             rotation=90, verticalalignment='top')
-
-failure_b_pos = 144
-throughput_plot.axvline(x = 144,    # Line on x = 2
-           ymin = 0, # Bottom of the plot
-           ymax = 1, color=line_color) # Top of the plot 
-plt.text(failure_b_pos + 2, plt.gca().get_ylim()[1] * 0.30, 'Failure B'.format(failure_b_pos), 
-             rotation=90, verticalalignment='top')
-
-failure_c_pos = 224
-throughput_plot.axvline(x = 224,    # Line on x = 2
-           ymin = 0, # Bottom of the plot
-           ymax = 1, color=line_color) # Top of the plot 
-plt.text(failure_c_pos + 2, plt.gca().get_ylim()[1] * 0.30, 'Failure C'.format(failure_c_pos), 
-             rotation=90, verticalalignment='top')
-
-failure_d_pos = 240
-throughput_plot.axvline(x = 240,    # Line on x = 2
-           ymin = 0, # Bottom of the plot
-           ymax = 1, color=line_color) # Top of the plot 
-plt.text(failure_d_pos + 2, plt.gca().get_ylim()[1] * 0.30, 'Failure D'.format(failure_d_pos), 
-             rotation=90, verticalalignment='top')
-
+bar_color = 'gray'
+bar_color = 'gray'
+bar_width = 0.4
 ticks_fontsize = 13
 labels_fontsize = 16
 legend_fontsize = 13
 title_fontsize = 17
 
-plt.xlabel('time (s)', fontsize=labels_fontsize)
+throughput_plot = sns.barplot(x='Category', y='TPS', data=throughput_df, yerr=throughput_yerr, capsize=0.2, color=bar_color, width=bar_width)
+
+# List of hatches for each bar
+hatches = ['/', 'O', 'x', '|', '\\', '*', 'o', '+']
+# Loop over the bars
+for i, bar in enumerate(throughput_plot.patches):
+    # Set a different hatch for each bar
+    hatch = hatches[i % len(hatches)]  # Cycle through the list of hatches
+    bar.set_hatch(hatch)
+
+plt.xlabel('Category', fontsize=labels_fontsize)
 plt.ylabel('TPS', fontsize=labels_fontsize)
 plt.xticks(fontsize=ticks_fontsize)
 plt.yticks(fontsize=ticks_fontsize)
-plt.ylim(0, 12000)
-plt.title('Robustness', fontsize=title_fontsize)
+plt.title('Throughput', fontsize=title_fontsize)
+# plt.yscale('log')
 plt.show()
 plt.cla() 
+
+# # scatter plot 
+# throughput_plot = sns.scatterplot(x="index", y="cb",
+#                 data=throughput_df, linewidth=0)
+# throughput_plot.set(xlabel='time (s)',
+#        ylabel='TPS',
+#        title='Throughput')
+
+# plt.xlabel('time (s)')
+# plt.ylabel('TPS')
+# plt.show()
+# plt.cla() 
 
 # # latency
 # f, ax = plt.subplots(figsize=(9, 5))
