@@ -11,7 +11,7 @@ sns.set_style({'font.family': 'Times New Roman'})
 f, ax = plt.subplots(figsize=(9, 5))
 sns.despine(fig=None, ax=None, top=True, right=True, left=False, bottom=False, offset=None, trim=False)
 
-console_out = open("log/tps-latency/server-9-batch1500.out") 
+console_out = open("log/scalability/4servers.out") 
 all_lines = console_out.readlines() 
 x = []
 y = []
@@ -22,7 +22,7 @@ for index, line in enumerate(all_lines):
 		print(sample_count, " ", str_list[1].strip('\n'), flush=True)
 		# csv_writer.writerow([str_list[1]])
 		x.append(sample_count * 4)
-		y.append(int(str_list[1]) * 1500 / 4)
+		y.append(int(str_list[1]) * 2000 / 4)
 		sample_count = sample_count + 1
 console_out.close() 
 
