@@ -37,7 +37,7 @@ tomchain_max_throughput = throughput_original_df['cb'].max()
 tomchain_min_throughput = throughput_original_df['cb'].min()
 
 throughput_data = {
-    'Category':     ['TomChain', 'Blockene', 'Algorand', 'SBFT', 'PBFT', 'Ethereum', 'Bitcoin'],
+    'Category':     ['TMCD', 'Blockene', 'Algorand', 'SBFT', 'PBFT', 'Ethereum', 'Bitcoin'],
     'TPS':          [tomchain_avg_throughput, 2000, 1000, 378, 204, 10, 7],
     'MaxValues':    [tomchain_max_throughput, 2000, 1000, 378, 204, 10, 7],
     'MinValues':    [tomchain_min_throughput, 2000, 1000, 378, 204, 10, 7]

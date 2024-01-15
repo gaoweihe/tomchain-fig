@@ -29,10 +29,12 @@ for index, line in enumerate(all_lines):
 console_out.close() 
 throughput_original_df_2 = pandas.DataFrame({'index': x, 'cb': y})
 throughput_original_df_2['cb'] = throughput_original_df_2['cb'].diff()
-throughput_original_df_2 = throughput_original_df_2[throughput_original_df_2['cb'] >= 6500]
-throughput_original_df_2 = throughput_original_df_2.head(50)
+throughput_original_df_2 = throughput_original_df_2[throughput_original_df_2['cb'] >= 7500]
+throughput_original_df_2 = throughput_original_df_2.tail(40)
+throughput_original_df_2 = throughput_original_df_2.head(20)
+throughput_original_df_2['index'] = throughput_original_df_2['index'] - 44
 
-console_out = open("log/scalability/4servers.out") 
+console_out = open("log/scalability/3servers.out") 
 all_lines = console_out.readlines() 
 x = []
 y = []
@@ -49,10 +51,12 @@ console_out.close()
 
 throughput_original_df_4 = pandas.DataFrame({'index': x, 'cb': y})
 throughput_original_df_4['cb'] = throughput_original_df_4['cb'].diff()
-throughput_original_df_4 = throughput_original_df_4[throughput_original_df_4['cb'] >= 6500]
-throughput_original_df_4 = throughput_original_df_4.head(50)
+# throughput_original_df_4 = throughput_original_df_4[throughput_original_df_4['cb'] >= 6500]
+throughput_original_df_4 = throughput_original_df_4.tail(40)
+throughput_original_df_4 = throughput_original_df_4.head(20)
+throughput_original_df_4['index'] = throughput_original_df_4['index'] - 56
 
-console_out = open("log/scalability/8servers.out") 
+console_out = open("log/scalability/9servers.out") 
 all_lines = console_out.readlines() 
 x = []
 y = []
@@ -69,8 +73,10 @@ console_out.close()
 
 throughput_original_df_8 = pandas.DataFrame({'index': x, 'cb': y})
 throughput_original_df_8['cb'] = throughput_original_df_8['cb'].diff()
-throughput_original_df_8 = throughput_original_df_8[throughput_original_df_8['cb'] >= 6500]
-throughput_original_df_8 = throughput_original_df_8.head(50)
+# throughput_original_df_8 = throughput_original_df_8[throughput_original_df_8['cb'] >= 6500]
+throughput_original_df_8 = throughput_original_df_8.tail(40)
+throughput_original_df_8 = throughput_original_df_8.head(20)
+throughput_original_df_8['index'] = throughput_original_df_8['index'] - 104
 
 
 # First dataset
@@ -102,20 +108,21 @@ legend_fontsize = 13
 title_fontsize = 17
 
 # Plotting the first line
-sns.lineplot(x='x_values', y='y_values', data=df1, label='2', marker='o', color=line_color)
+sns.lineplot(x='x_values', y='y_values', data=df1, label='9', marker='o', color=line_color)
 
 # Plotting the second line
-sns.lineplot(x='x_values', y='y_values', data=df2, label='4', marker='x', color=line_color)
+sns.lineplot(x='x_values', y='y_values', data=df2, label='6', marker='x', color=line_color)
 
 # Plotting the third line
-sns.lineplot(x='x_values', y='y_values', data=df3, label='8', marker='*', linestyle=':', color=line_color)
+sns.lineplot(x='x_values', y='y_values', data=df3, label='3', marker='*', linestyle=':', color=line_color)
 
 # Customizing the visuals
 plt.title('Scalability', fontsize=title_fontsize)
 plt.xlabel('Time (s)', fontsize=labels_fontsize)  # Custom x-axis title
 plt.ylabel('TPS', fontsize=labels_fontsize)  # Custom y-axis title
+plt.xlim(0, 80)
 plt.ylim(0, 10000)
-plt.legend(title='#delegators', fontsize=legend_fontsize)  # Adding a legend with a title
+plt.legend(title='#DN', fontsize=legend_fontsize)  # Adding a legend with a title
 
 # Displaying the plot
 plt.show()

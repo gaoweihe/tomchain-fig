@@ -60,7 +60,7 @@ title_fontsize = 17
 ax1 = sns.lineplot(x='index', y='cpu', data=cpu_df, ax=ax1, label='CPU', marker='x', color=line_color)
 ax1.set_xlabel('Time (s)', fontsize=labels_fontsize)
 ax1.set_ylabel(r'Load (%)', fontsize=labels_fontsize)
-ax1.set_xticks([0, 20, 40, 60, 80, 100])
+# ax1.set_xticks([0, 20, 40, 60, 80, 100])
 ax1.set_ylim(0, 100)
 # sns.lineplot(x='index', y='network_rx', data=network_rx_df, label='network_rx', marker='o')
 # sns.lineplot(x='index', y='network_tx', data=network_tx_df, label='network_tx', marker='o')

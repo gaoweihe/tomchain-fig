@@ -11,7 +11,7 @@ sns.set_style({'font.family': 'Times New Roman'})
 f, ax = plt.subplots(figsize=(9, 5))
 sns.despine(fig=None, ax=None, top=True, right=True, left=False, bottom=False, offset=None, trim=False)
 
-console_out = open("log/scalability/4servers.out") 
+console_out = open("log/scalability/9servers.out") 
 all_lines = console_out.readlines() 
 x = []
 y = []
@@ -47,7 +47,6 @@ throughput_df['PositiveError'] = throughput_df['MaxValues'] - throughput_df['TPS
 throughput_df['NegativeError'] = throughput_df['TPS'] - throughput_df['MinValues']
 throughput_yerr = [throughput_df['NegativeError'].values, throughput_df['PositiveError'].values]
 
-bar_color = 'gray'
 bar_color = 'gray'
 bar_width = 0.4
 ticks_fontsize = 13

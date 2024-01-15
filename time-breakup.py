@@ -9,7 +9,7 @@ sns.set_theme(style="whitegrid")
 sns.set_style({'font.family': 'Times New Roman'})
 
 # performance break-up 
-f, ax = plt.subplots(figsize=(9, 5))
+fig, axs = plt.subplots(1, 2, figsize=(9, 5))
 sns.despine(fig=None, ax=None, top=True, right=True, left=False, bottom=False, offset=None, trim=False)
 console_out = open("server-9.out")
 all_lines = console_out.readlines()
@@ -75,34 +75,38 @@ breakup_df = DataFrame(breakup_data)
 sns.set_theme(style="whitegrid")
 
 # Sample data
-data1 = {'Categories': ['A', 'B', 'C'], 'Values': [15, 30, 45]}
-data2 = {'Categories': ['D', 'E', 'F'], 'Values': [20, 40, 40]}
-data3 = {'Categories': ['G', 'H', 'I'], 'Values': [25, 35, 40]}
+data1 = {'Categories': ['Distribute', 'Vote', 'Commit'], 'Values': [abs(tomchain_dist_time), abs(tomchain_commit_time), abs(tomchain_recv_time)]}
+data2 = {'Categories': ['Distribute', 'Vote', 'Commit'], 'Values': [5000, 35000, 10000]}
+# data3 = {'Categories': ['G', 'H', 'I'], 'Values': [25, 35, 40]}
 
 df1 = pandas.DataFrame(data1)
 df2 = pandas.DataFrame(data2)
-df3 = pandas.DataFrame(data3)
-
-# Create a figure with specified size
-fig, axs = plt.subplots(1, 3, figsize=(20, 6))  # 1 row, 3 columns
+# df3 = pandas.DataFrame(data3)
 
 # Create a color palette
-colors = sns.color_palette("viridis", 3)
+# colors = sns.color_palette("viridis", 3)
+hatches = ['/', '\\', '|', '-']
+pie_color = ['gray']
+font_properties = {'family': 'Times New Roman'}
+ticks_fontsize = 13
+labels_fontsize = 16
+legend_fontsize = 13
+title_fontsize = 17
 
 # Create the first pie chart using data from df1
-axs[0].pie(df1['Values'], labels=df1['Categories'], autopct='%1.1f%%', startangle=90, colors=colors)
-axs[0].set_title('Pie Chart 1')
+axs[0].pie(df1['Values'], labels=df1['Categories'], autopct='%1.1f%%', startangle=90, colors=pie_color)
+axs[0].set_title('TMCD', fontsize=title_fontsize)
 axs[0].axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 
 # Create the second pie chart using data from df2
-axs[1].pie(df2['Values'], labels=df2['Categories'], autopct='%1.1f%%', startangle=90, colors=colors)
-axs[1].set_title('Pie Chart 2')
+axs[1].pie(df2['Values'], labels=df2['Categories'], autopct='%1.1f%%', startangle=90, colors=pie_color)
+axs[1].set_title('Blockene', fontsize=title_fontsize)
 axs[1].axis('equal')
 
-# Create the third pie chart using data from df3
-axs[2].pie(df3['Values'], labels=df3['Categories'], autopct='%1.1f%%', startangle=90, colors=colors)
-axs[2].set_title('Pie Chart 3')
-axs[2].axis('equal')
+# # Create the third pie chart using data from df3
+# axs[2].pie(df3['Values'], labels=df3['Categories'], autopct='%1.1f%%', startangle=90, colors=colors)
+# axs[2].set_title('SBFT')
+# axs[2].axis('equal')
 
 # Improve spacing between subplots
 plt.tight_layout()
@@ -150,8 +154,8 @@ plt.show()
 # plt.title('Time Break-up', fontsize=title_fontsize)
 # plt.legend(fontsize=legend_fontsize)
 
-plt.show()
-plt.cla()
+# plt.show()
+# plt.cla()
 
 # line plot 
 # performance_df = DataFrame({'index': x, 'proposal': proposal, 'dist': dist, 'commit': commit, 'recv': recv})

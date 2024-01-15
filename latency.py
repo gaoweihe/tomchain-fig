@@ -36,7 +36,7 @@ tomchain_min_latency = latency_original_df['latency'].min()
 
 # bar plot 
 latency_data = {
-    'Category': ['TomChain', 'Blockene', 'Algorand', 'SBFT', 'PBFT', 'Ethereum'],
+    'Category': ['TMCD', 'Blockene', 'Algorand', 'SBFT', 'PBFT', 'Ethereum'],
     'Latency': [tomchain_avg_latency, 90000, 18000, 254, 538, 12000],
     'MaxValues': [tomchain_max_latency, 90000, 20000, 254, 538, 12000],
     'MinValues': [tomchain_min_latency, 90000, 16000, 254, 538, 12000]
