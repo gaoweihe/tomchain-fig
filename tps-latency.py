@@ -15,22 +15,22 @@ sns.set_style({'font.family': 'Times New Roman'})
 #     'y_values': [78, 125, 240, 370, 400, 700, 2100, 3013, 3695, 6843, 7630]  # Some calculation to generate values
 # }
 data1 = {
-    'x_values': [600, 550, 1030, 1070, 1078, 1112, 1152, 1520, 2170],  # 1 to 100
-    'y_values': [78, 125, 240, 400, 700, 2100, 3013, 6843, 7630]  # Some calculation to generate values
+    'x_values': [78, 125, 240, 400, 700, 2100, 3013, 6843, 7630],
+    'y_values': [600, 550, 1030, 1070, 1078, 1112, 1152, 1520, 2170]
 }
 df1 = pd.DataFrame(data1)
 
 # SBFT
 data2 = {
-    'x_values': [205, 220, 240, 280, 360, 450],  # 1 to 100
-    'y_values': [16, 141, 250, 438, 500, 516]  # Some calculation to generate values
+    'x_values': [16, 141, 250, 438, 500, 516],
+    'y_values': [205, 220, 240, 280, 360, 450]
 }
 df2 = pd.DataFrame(data2)
 
 # Third dataset
 data3 = {
-    'x_values': [1, 2],  # 1 to 100
-    'y_values': [3, 4]  # Some calculation to generate values
+    'x_values': [1, 2],
+    'y_values': [3, 4]
 }
 df3 = pd.DataFrame(data3)
 

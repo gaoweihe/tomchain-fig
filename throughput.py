@@ -58,12 +58,12 @@ title_fontsize = 17
 throughput_plot = sns.barplot(x='Category', y='TPS', data=throughput_df, yerr=throughput_yerr, capsize=0.2, color=bar_color, width=bar_width)
 
 # List of hatches for each bar
-hatches = ['/', 'O', 'x', '|', '\\', '*', 'o', '+']
-# Loop over the bars
-for i, bar in enumerate(throughput_plot.patches):
-    # Set a different hatch for each bar
-    hatch = hatches[i % len(hatches)]  # Cycle through the list of hatches
-    bar.set_hatch(hatch)
+# hatches = ['/', 'O', 'x', '|', '\\', '*', 'o', '+']
+# # Loop over the bars
+# for i, bar in enumerate(throughput_plot.patches):
+#     # Set a different hatch for each bar
+#     hatch = hatches[i % len(hatches)]  # Cycle through the list of hatches
+#     bar.set_hatch(hatch)
 
 plt.xlabel('Category', fontsize=labels_fontsize)
 plt.ylabel('TPS', fontsize=labels_fontsize)

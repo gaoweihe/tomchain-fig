@@ -56,12 +56,12 @@ title_fontsize = 17
 latency_plot = sns.barplot(x='Category', y='Latency', data=latency_df, yerr=latency_yerr, capsize=0.2, color=bar_color, width=bar_width)
 
 # List of hatches for each bar
-hatches = ['/', 'O', 'x', '|', '\\', '*', 'o', '+']
-# Loop over the bars
-for i, bar in enumerate(latency_plot.patches):
-    # Set a different hatch for each bar
-    hatch = hatches[i % len(hatches)]  # Cycle through the list of hatches
-    bar.set_hatch(hatch)
+# hatches = ['/', 'O', 'x', '|', '\\', '*', 'o', '+']
+# # Loop over the bars
+# for i, bar in enumerate(latency_plot.patches):
+#     # Set a different hatch for each bar
+#     hatch = hatches[i % len(hatches)]  # Cycle through the list of hatches
+#     bar.set_hatch(hatch)
 
 
 plt.yscale('log')
