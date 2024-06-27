@@ -2,6 +2,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib
 import matplotlib.pyplot as plt
+import matplotlib.font_manager as font_manager
 matplotlib.use('TkAgg', force=True)
 sns.set_theme(style="whitegrid")
 sns.set_style({'font.family': 'Times New Roman'})
@@ -53,11 +54,13 @@ sns.lineplot(x='x_values', y='y_values', data=df2, label='SBFT', marker='o', col
 # # Plotting the third line
 # sns.lineplot(x='x_values', y='y_values', data=df3, label='Line 3', marker='x')
 
+# plt.rcParams['font.sans-serif'] = ['SimSun']
+
 # Customizing the visuals
-plt.title('TPS/Latency trade-off', fontsize=title_fontsize)
-plt.xlabel('Latency (ms)', fontsize=labels_fontsize)  # Custom x-axis title
-plt.ylabel('TPS', fontsize=labels_fontsize)  # Custom y-axis title
-plt.legend(title='Category', fontsize=legend_fontsize)  # Adding a legend with a title
+plt.title('吞吐量与延迟的取舍', fontsize=title_fontsize)
+plt.xlabel('延迟（毫秒）', fontsize=labels_fontsize)  # Custom x-axis title
+plt.ylabel('交易吞吐量', fontsize=labels_fontsize)  # Custom y-axis title
+plt.legend(title='类别', fontsize=legend_fontsize)  # Adding a legend with a title
 
 # Displaying the plot
 plt.show()

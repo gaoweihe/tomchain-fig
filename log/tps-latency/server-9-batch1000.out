@@ -1,0 +1,539 @@
+[2023-10-18 08:20:58.207] [info] TomChain server starts. 
+[2023-10-18 08:20:58.207] [info] Parsing JSON configuration file. 
+[2023-10-18 08:20:58.207] [info] Setting log level. 
+[2023-10-18 08:20:58.207] [info] Starting profiler
+[2023-10-18 08:20:58.388] [info] Starting server. 
+[2023-10-18 08:20:58.388] [info] Initializing server
+[2023-10-18 08:20:58.398] [info] Initializing client profile
+[2023-10-18 08:20:58.782] [info] Starting gRPC server thread
+[2023-10-18 08:20:58.782] [info] Starting gRPC peer server thread
+[2023-10-18 08:21:00.782] [info] Initializing peer stubs
+[2023-10-18 08:21:00.787] [info] Starting schedule thread
+[2023-10-18 08:21:02.788] [info] server watchdog
+[2023-10-18 08:21:04.788] [info] server watchdog
+[2023-10-18 08:21:04.788] [info] tx:995 | pb:8 | cb:0
+[2023-10-18 08:21:06.788] [info] server watchdog
+[2023-10-18 08:21:08.788] [info] tx:995 | pb:8 | cb:0
+[2023-10-18 08:21:08.788] [info] server watchdog
+[2023-10-18 08:21:10.326] [info] LocalCommit blockid=9000007, latency=9519
+[2023-10-18 08:21:10.355] [info] SPBcastCommit blockid=9000000, latency=9564
+[2023-10-18 08:21:10.355] [info] SPBcastCommit block=9000000, proposal_ts=1697617260791, dist_ts=1697617268781, commit_ts=1697617270485, recv_ts=1697617270355
+[2023-10-18 08:21:10.420] [info] SPBcastCommit blockid=9000000, latency=9629
+[2023-10-18 08:21:10.421] [info] SPBcastCommit block=9000000, proposal_ts=1697617260791, dist_ts=1697617260285, commit_ts=1697617261994, recv_ts=1697617270420
+[2023-10-18 08:21:10.424] [info] SPBcastCommit blockid=9000001, latency=9629
+[2023-10-18 08:21:10.424] [info] SPBcastCommit block=9000001, proposal_ts=1697617260795, dist_ts=1697617260285, commit_ts=1697617262013, recv_ts=1697617270424
+[2023-10-18 08:21:10.463] [info] SPBcastCommit blockid=9000001, latency=9668
+[2023-10-18 08:21:10.463] [info] SPBcastCommit block=9000001, proposal_ts=1697617260795, dist_ts=1697617277786, commit_ts=1697617279527, recv_ts=1697617270463
+[2023-10-18 08:21:10.466] [info] SPBcastCommit blockid=9000002, latency=9668
+[2023-10-18 08:21:10.467] [info] SPBcastCommit block=9000002, proposal_ts=1697617260798, dist_ts=1697617277786, commit_ts=1697617279548, recv_ts=1697617270466
+[2023-10-18 08:21:10.486] [info] SPBcastCommit blockid=9000002, latency=9688
+[2023-10-18 08:21:10.486] [info] SPBcastCommit block=9000002, proposal_ts=1697617260798, dist_ts=1697617265807, commit_ts=1697617267565, recv_ts=1697617270486
+[2023-10-18 08:21:10.488] [info] SPBcastCommit blockid=9000003, latency=9689
+[2023-10-18 08:21:10.488] [info] SPBcastCommit block=9000003, proposal_ts=1697617260799, dist_ts=1697617265807, commit_ts=1697617267586, recv_ts=1697617270488
+[2023-10-18 08:21:10.495] [info] SPBcastCommit blockid=9000003, latency=9696
+[2023-10-18 08:21:10.495] [info] SPBcastCommit block=9000003, proposal_ts=1697617260799, dist_ts=1697617271101, commit_ts=1697617272890, recv_ts=1697617270495
+[2023-10-18 08:21:10.501] [info] SPBcastCommit blockid=9000004, latency=9700
+[2023-10-18 08:21:10.501] [info] SPBcastCommit block=9000004, proposal_ts=1697617260801, dist_ts=1697617271101, commit_ts=1697617272912, recv_ts=1697617270501
+[2023-10-18 08:21:10.525] [info] SPBcastCommit blockid=9000004, latency=9724
+[2023-10-18 08:21:10.525] [info] SPBcastCommit block=9000004, proposal_ts=1697617260801, dist_ts=1697617272270, commit_ts=1697617274086, recv_ts=1697617270525
+[2023-10-18 08:21:10.529] [info] SPBcastCommit blockid=9000005, latency=9725
+[2023-10-18 08:21:10.529] [info] SPBcastCommit block=9000005, proposal_ts=1697617260804, dist_ts=1697617272270, commit_ts=1697617274108, recv_ts=1697617270529
+[2023-10-18 08:21:10.572] [info] SPBcastCommit blockid=9000006, latency=9766
+[2023-10-18 08:21:10.573] [info] SPBcastCommit block=9000006, proposal_ts=1697617260806, dist_ts=1697617266421, commit_ts=1697617268285, recv_ts=1697617270572
+[2023-10-18 08:21:10.578] [info] SPBcastCommit blockid=9000005, latency=9774
+[2023-10-18 08:21:10.578] [info] SPBcastCommit block=9000005, proposal_ts=1697617260804, dist_ts=1697617280378, commit_ts=1697617282227, recv_ts=1697617270578
+[2023-10-18 08:21:10.582] [info] SPBcastCommit blockid=9000006, latency=9776
+[2023-10-18 08:21:10.582] [info] SPBcastCommit block=9000006, proposal_ts=1697617260806, dist_ts=1697617280378, commit_ts=1697617282245, recv_ts=1697617270582
+[2023-10-18 08:21:10.585] [info] SPBcastCommit blockid=9000007, latency=9778
+[2023-10-18 08:21:10.585] [info] SPBcastCommit block=9000007, proposal_ts=1697617260807, dist_ts=1697617266421, commit_ts=1697617268323, recv_ts=1697617270585
+[2023-10-18 08:21:10.738] [info] LocalCommit blockid=9000008, latency=443
+[2023-10-18 08:21:10.788] [info] server watchdog
+[2023-10-18 08:21:10.957] [info] SPBcastCommit blockid=9000008, latency=662
+[2023-10-18 08:21:10.957] [info] SPBcastCommit block=9000008, proposal_ts=1697617270295, dist_ts=1697617270720, commit_ts=1697617271082, recv_ts=1697617270957
+[2023-10-18 08:21:11.534] [info] SPBcastCommit blockid=9000009, latency=1165
+[2023-10-18 08:21:11.534] [info] SPBcastCommit block=9000009, proposal_ts=1697617270369, dist_ts=1697617271188, commit_ts=1697617271684, recv_ts=1697617271534
+[2023-10-18 08:21:11.571] [info] SPBcastCommit blockid=9000009, latency=1202
+[2023-10-18 08:21:11.571] [info] SPBcastCommit block=9000009, proposal_ts=1697617270369, dist_ts=1697617262684, commit_ts=1697617263173, recv_ts=1697617271571
+[2023-10-18 08:21:11.575] [info] SPBcastCommit blockid=9000010, latency=1137
+[2023-10-18 08:21:11.575] [info] SPBcastCommit block=9000010, proposal_ts=1697617270438, dist_ts=1697617262701, commit_ts=1697617263293, recv_ts=1697617271575
+[2023-10-18 08:21:11.704] [info] SPBcastCommit blockid=9000010, latency=1266
+[2023-10-18 08:21:11.704] [info] SPBcastCommit block=9000010, proposal_ts=1697617270438, dist_ts=1697617280204, commit_ts=1697617280798, recv_ts=1697617271704
+[2023-10-18 08:21:11.707] [info] SPBcastCommit blockid=9000011, latency=1228
+[2023-10-18 08:21:11.707] [info] SPBcastCommit block=9000011, proposal_ts=1697617270479, dist_ts=1697617280220, commit_ts=1697617280909, recv_ts=1697617271707
+[2023-10-18 08:21:11.766] [info] SPBcastCommit blockid=9000011, latency=1287
+[2023-10-18 08:21:11.766] [info] SPBcastCommit block=9000011, proposal_ts=1697617270479, dist_ts=1697617268247, commit_ts=1697617268929, recv_ts=1697617271766
+[2023-10-18 08:21:11.771] [info] SPBcastCommit blockid=9000012, latency=1271
+[2023-10-18 08:21:11.771] [info] SPBcastCommit block=9000012, proposal_ts=1697617270500, dist_ts=1697617268265, commit_ts=1697617269058, recv_ts=1697617271771
+[2023-10-18 08:21:11.922] [info] SPBcastCommit blockid=9000012, latency=1422
+[2023-10-18 08:21:11.922] [info] SPBcastCommit block=9000012, proposal_ts=1697617270500, dist_ts=1697617273556, commit_ts=1697617274342, recv_ts=1697617271922
+[2023-10-18 08:21:11.928] [info] SPBcastCommit blockid=9000013, latency=1419
+[2023-10-18 08:21:11.928] [info] SPBcastCommit block=9000013, proposal_ts=1697617270509, dist_ts=1697617273575, commit_ts=1697617274444, recv_ts=1697617271928
+[2023-10-18 08:21:12.016] [info] SPBcastCommit blockid=9000014, latency=1477
+[2023-10-18 08:21:12.016] [info] SPBcastCommit block=9000014, proposal_ts=1697617270539, dist_ts=1697617282926, commit_ts=1697617283779, recv_ts=1697617272016
+[2023-10-18 08:21:12.038] [info] SPBcastCommit blockid=9000013, latency=1529
+[2023-10-18 08:21:12.038] [info] SPBcastCommit block=9000013, proposal_ts=1697617270509, dist_ts=1697617274746, commit_ts=1697617275618, recv_ts=1697617272038
+[2023-10-18 08:21:12.042] [info] SPBcastCommit blockid=9000014, latency=1503
+[2023-10-18 08:21:12.042] [info] SPBcastCommit block=9000014, proposal_ts=1697617270539, dist_ts=1697617274816, commit_ts=1697617275659, recv_ts=1697617272042
+[2023-10-18 08:21:12.569] [info] LocalCommit blockid=9000016, latency=1855
+[2023-10-18 08:21:12.631] [info] LocalCommit blockid=9000017, latency=1082
+[2023-10-18 08:21:12.737] [info] SPBcastCommit blockid=9000015, latency=2153
+[2023-10-18 08:21:12.737] [info] SPBcastCommit block=9000015, proposal_ts=1697617270584, dist_ts=1697617283027, commit_ts=1697617284475, recv_ts=1697617272737
+[2023-10-18 08:21:12.788] [info] tx:986 | pb:8 | cb:18
+[2023-10-18 08:21:12.788] [info] server watchdog
+[2023-10-18 08:21:12.803] [info] SPBcastCommit blockid=9000015, latency=2219
+[2023-10-18 08:21:12.803] [info] SPBcastCommit block=9000015, proposal_ts=1697617270584, dist_ts=1697617269071, commit_ts=1697617270515, recv_ts=1697617272803
+[2023-10-18 08:21:12.807] [info] SPBcastCommit blockid=9000016, latency=2093
+[2023-10-18 08:21:12.808] [info] SPBcastCommit block=9000016, proposal_ts=1697617270714, dist_ts=1697617269421, commit_ts=1697617270563, recv_ts=1697617272807
+[2023-10-18 08:21:12.936] [info] SPBcastCommit blockid=9000017, latency=1387
+[2023-10-18 08:21:12.936] [info] SPBcastCommit block=9000017, proposal_ts=1697617271549, dist_ts=1697617272342, commit_ts=1697617272978, recv_ts=1697617272936
+[2023-10-18 08:21:12.937] [info] SPBcastCommit blockid=9000018, latency=1350
+[2023-10-18 08:21:12.937] [info] SPBcastCommit block=9000018, proposal_ts=1697617271587, dist_ts=1697617272354, commit_ts=1697617273002, recv_ts=1697617272937
+[2023-10-18 08:21:12.938] [info] SPBcastCommit blockid=9000020, latency=1152
+[2023-10-18 08:21:12.938] [info] SPBcastCommit block=9000020, proposal_ts=1697617271786, dist_ts=1697617269547, commit_ts=1697617270127, recv_ts=1697617272938
+[2023-10-18 08:21:12.948] [info] SPBcastCommit blockid=9000019, latency=1230
+[2023-10-18 08:21:12.948] [info] SPBcastCommit block=9000019, proposal_ts=1697617271718, dist_ts=1697617281375, commit_ts=1697617282059, recv_ts=1697617272948
+[2023-10-18 08:21:12.950] [info] SPBcastCommit blockid=9000018, latency=1363
+[2023-10-18 08:21:12.950] [info] SPBcastCommit block=9000018, proposal_ts=1697617271587, dist_ts=1697617263856, commit_ts=1697617264518, recv_ts=1697617272950
+[2023-10-18 08:21:12.952] [info] SPBcastCommit blockid=9000019, latency=1234
+[2023-10-18 08:21:12.952] [info] SPBcastCommit block=9000019, proposal_ts=1697617271718, dist_ts=1697617263873, commit_ts=1697617264537, recv_ts=1697617272952
+[2023-10-18 08:21:12.963] [info] SPBcastCommit blockid=9000020, latency=1177
+[2023-10-18 08:21:12.963] [info] SPBcastCommit block=9000020, proposal_ts=1697617271786, dist_ts=1697617281520, commit_ts=1697617282091, recv_ts=1697617272963
+[2023-10-18 08:21:13.420] [info] SPBcastCommit blockid=9000021, latency=1483
+[2023-10-18 08:21:13.421] [info] SPBcastCommit block=9000021, proposal_ts=1697617271937, dist_ts=1697617270122, commit_ts=1697617270589, recv_ts=1697617273420
+[2023-10-18 08:21:13.482] [info] SPBcastCommit blockid=9000021, latency=1545
+[2023-10-18 08:21:13.482] [info] SPBcastCommit block=9000021, proposal_ts=1697617271937, dist_ts=1697617275418, commit_ts=1697617275874, recv_ts=1697617273482
+[2023-10-18 08:21:13.486] [info] SPBcastCommit blockid=9000022, latency=1456
+[2023-10-18 08:21:13.486] [info] SPBcastCommit block=9000022, proposal_ts=1697617272030, dist_ts=1697617275445, commit_ts=1697617275946, recv_ts=1697617273486
+[2023-10-18 08:21:13.562] [info] SPBcastCommit blockid=9000022, latency=1532
+[2023-10-18 08:21:13.562] [info] SPBcastCommit block=9000022, proposal_ts=1697617272030, dist_ts=1697617276606, commit_ts=1697617277119, recv_ts=1697617273562
+[2023-10-18 08:21:13.565] [info] SPBcastCommit blockid=9000023, latency=1013
+[2023-10-18 08:21:13.565] [info] SPBcastCommit block=9000023, proposal_ts=1697617272552, dist_ts=1697617276619, commit_ts=1697617277151, recv_ts=1697617273565
+[2023-10-18 08:21:13.582] [info] SPBcastCommit blockid=9000023, latency=1030
+[2023-10-18 08:21:13.582] [info] SPBcastCommit block=9000023, proposal_ts=1697617272552, dist_ts=1697617284732, commit_ts=1697617285273, recv_ts=1697617273582
+[2023-10-18 08:21:13.586] [info] SPBcastCommit blockid=9000024, latency=973
+[2023-10-18 08:21:13.586] [info] SPBcastCommit block=9000024, proposal_ts=1697617272612, dist_ts=1697617284883, commit_ts=1697617285354, recv_ts=1697617273585
+[2023-10-18 08:21:13.598] [info] SPBcastCommit blockid=9000024, latency=986
+[2023-10-18 08:21:13.598] [info] SPBcastCommit block=9000024, proposal_ts=1697617272612, dist_ts=1697617270926, commit_ts=1697617271402, recv_ts=1697617273598
+[2023-10-18 08:21:13.901] [info] LocalCommit blockid=9000025, latency=1152
+[2023-10-18 08:21:13.985] [info] LocalCommit blockid=9000026, latency=1039
+[2023-10-18 08:21:14.138] [info] SPBcastCommit blockid=9000025, latency=1389
+[2023-10-18 08:21:14.138] [info] SPBcastCommit block=9000025, proposal_ts=1697617272749, dist_ts=1697617271431, commit_ts=1697617271889, recv_ts=1697617274138
+[2023-10-18 08:21:14.282] [info] SPBcastCommit blockid=9000028, latency=1320
+[2023-10-18 08:21:14.282] [info] SPBcastCommit block=9000028, proposal_ts=1697617272962, dist_ts=1697617282835, commit_ts=1697617283414, recv_ts=1697617274282
+[2023-10-18 08:21:14.301] [info] SPBcastCommit blockid=9000026, latency=1356
+[2023-10-18 08:21:14.301] [info] SPBcastCommit block=9000026, proposal_ts=1697617272945, dist_ts=1697617273793, commit_ts=1697617274343, recv_ts=1697617274301
+[2023-10-18 08:21:14.304] [info] SPBcastCommit blockid=9000027, latency=1353
+[2023-10-18 08:21:14.304] [info] SPBcastCommit block=9000027, proposal_ts=1697617272951, dist_ts=1697617273810, commit_ts=1697617274364, recv_ts=1697617274304
+[2023-10-18 08:21:14.306] [info] SPBcastCommit blockid=9000027, latency=1355
+[2023-10-18 08:21:14.306] [info] SPBcastCommit block=9000027, proposal_ts=1697617272951, dist_ts=1697617265312, commit_ts=1697617265881, recv_ts=1697617274306
+[2023-10-18 08:21:14.317] [info] SPBcastCommit blockid=9000028, latency=1355
+[2023-10-18 08:21:14.317] [info] SPBcastCommit block=9000028, proposal_ts=1697617272962, dist_ts=1697617265331, commit_ts=1697617265899, recv_ts=1697617274317
+[2023-10-18 08:21:14.788] [info] server watchdog
+[2023-10-18 08:21:14.973] [info] SPBcastCommit blockid=9000029, latency=1542
+[2023-10-18 08:21:14.973] [info] SPBcastCommit block=9000029, proposal_ts=1697617273431, dist_ts=1697617283619, commit_ts=1697617284106, recv_ts=1697617274973
+[2023-10-18 08:21:14.993] [info] SPBcastCommit blockid=9000029, latency=1562
+[2023-10-18 08:21:14.993] [info] SPBcastCommit block=9000029, proposal_ts=1697617273431, dist_ts=1697617271639, commit_ts=1697617272134, recv_ts=1697617274993
+[2023-10-18 08:21:14.996] [info] SPBcastCommit blockid=9000030, latency=1500
+[2023-10-18 08:21:14.996] [info] SPBcastCommit block=9000030, proposal_ts=1697617273496, dist_ts=1697617271656, commit_ts=1697617272285, recv_ts=1697617274996
+[2023-10-18 08:21:15.154] [info] LocalCommit blockid=9000034, latency=1195
+[2023-10-18 08:21:15.204] [info] SPBcastCommit blockid=9000030, latency=1708
+[2023-10-18 08:21:15.204] [info] SPBcastCommit block=9000030, proposal_ts=1697617273496, dist_ts=1697617276955, commit_ts=1697617277596, recv_ts=1697617275204
+[2023-10-18 08:21:15.209] [info] SPBcastCommit blockid=9000031, latency=1631
+[2023-10-18 08:21:15.209] [info] SPBcastCommit block=9000031, proposal_ts=1697617273578, dist_ts=1697617276972, commit_ts=1697617277678, recv_ts=1697617275209
+[2023-10-18 08:21:15.272] [info] SPBcastCommit blockid=9000031, latency=1694
+[2023-10-18 08:21:15.272] [info] SPBcastCommit block=9000031, proposal_ts=1697617273578, dist_ts=1697617278142, commit_ts=1697617278851, recv_ts=1697617275272
+[2023-10-18 08:21:15.277] [info] SPBcastCommit blockid=9000032, latency=1682
+[2023-10-18 08:21:15.277] [info] SPBcastCommit block=9000032, proposal_ts=1697617273595, dist_ts=1697617278147, commit_ts=1697617278923, recv_ts=1697617275277
+[2023-10-18 08:21:15.393] [info] SPBcastCommit blockid=9000032, latency=1798
+[2023-10-18 08:21:15.393] [info] SPBcastCommit block=9000032, proposal_ts=1697617273595, dist_ts=1697617286257, commit_ts=1697617287038, recv_ts=1697617275393
+[2023-10-18 08:21:15.394] [info] SPBcastCommit blockid=9000033, latency=1517
+[2023-10-18 08:21:15.394] [info] SPBcastCommit block=9000033, proposal_ts=1697617273877, dist_ts=1697617272312, commit_ts=1697617273119, recv_ts=1697617275394
+[2023-10-18 08:21:15.396] [info] SPBcastCommit blockid=9000033, latency=1519
+[2023-10-18 08:21:15.396] [info] SPBcastCommit block=9000033, proposal_ts=1697617273877, dist_ts=1697617286273, commit_ts=1697617287065, recv_ts=1697617275396
+[2023-10-18 08:21:15.412] [info] SPBcastCommit blockid=9000034, latency=1453
+[2023-10-18 08:21:15.412] [info] SPBcastCommit block=9000034, proposal_ts=1697617273959, dist_ts=1697617272331, commit_ts=1697617273140, recv_ts=1697617275412
+[2023-10-18 08:21:15.778] [info] LocalCommit blockid=9000035, latency=1485
+[2023-10-18 08:21:16.049] [info] SPBcastCommit blockid=9000035, latency=1756
+[2023-10-18 08:21:16.049] [info] SPBcastCommit block=9000035, proposal_ts=1697617274293, dist_ts=1697617275613, commit_ts=1697617276121, recv_ts=1697617276049
+[2023-10-18 08:21:16.053] [info] SPBcastCommit blockid=9000036, latency=1737
+[2023-10-18 08:21:16.053] [info] SPBcastCommit block=9000036, proposal_ts=1697617274316, dist_ts=1697617275628, commit_ts=1697617276210, recv_ts=1697617276053
+[2023-10-18 08:21:16.076] [info] SPBcastCommit blockid=9000036, latency=1760
+[2023-10-18 08:21:16.076] [info] SPBcastCommit block=9000036, proposal_ts=1697617274316, dist_ts=1697617267129, commit_ts=1697617267707, recv_ts=1697617276076
+[2023-10-18 08:21:16.080] [info] SPBcastCommit blockid=9000037, latency=1093
+[2023-10-18 08:21:16.080] [info] SPBcastCommit block=9000037, proposal_ts=1697617274987, dist_ts=1697617267143, commit_ts=1697617267820, recv_ts=1697617276080
+[2023-10-18 08:21:16.263] [info] SPBcastCommit blockid=9000037, latency=1276
+[2023-10-18 08:21:16.263] [info] SPBcastCommit block=9000037, proposal_ts=1697617274987, dist_ts=1697617284647, commit_ts=1697617285327, recv_ts=1697617276263
+[2023-10-18 08:21:16.266] [info] SPBcastCommit blockid=9000038, latency=1261
+[2023-10-18 08:21:16.266] [info] SPBcastCommit block=9000038, proposal_ts=1697617275005, dist_ts=1697617284666, commit_ts=1697617285384, recv_ts=1697617276266
+[2023-10-18 08:21:16.273] [info] SPBcastCommit blockid=9000038, latency=1268
+[2023-10-18 08:21:16.273] [info] SPBcastCommit block=9000038, proposal_ts=1697617275005, dist_ts=1697617272686, commit_ts=1697617273415, recv_ts=1697617276273
+[2023-10-18 08:21:16.280] [info] SPBcastCommit blockid=9000039, latency=1154
+[2023-10-18 08:21:16.280] [info] SPBcastCommit block=9000039, proposal_ts=1697617275126, dist_ts=1697617272878, commit_ts=1697617273533, recv_ts=1697617276280
+[2023-10-18 08:21:16.322] [info] SPBcastCommit blockid=9000039, latency=1196
+[2023-10-18 08:21:16.322] [info] SPBcastCommit block=9000039, proposal_ts=1697617275126, dist_ts=1697617278174, commit_ts=1697617278816, recv_ts=1697617276322
+[2023-10-18 08:21:16.688] [info] LocalCommit blockid=9000043, latency=938
+[2023-10-18 08:21:16.788] [info] tx:969 | pb:8 | cb:41
+[2023-10-18 08:21:16.789] [info] server watchdog
+[2023-10-18 08:21:16.843] [info] SPBcastCommit blockid=9000041, latency=1556
+[2023-10-18 08:21:16.843] [info] SPBcastCommit block=9000041, proposal_ts=1697617275287, dist_ts=1697617279973, commit_ts=1697617280483, recv_ts=1697617276843
+[2023-10-18 08:21:16.927] [info] SPBcastCommit blockid=9000042, latency=1516
+[2023-10-18 08:21:16.927] [info] SPBcastCommit block=9000042, proposal_ts=1697617275411, dist_ts=1697617274137, commit_ts=1697617274646, recv_ts=1697617276927
+[2023-10-18 08:21:16.934] [info] SPBcastCommit blockid=9000041, latency=1647
+[2023-10-18 08:21:16.934] [info] SPBcastCommit block=9000041, proposal_ts=1697617275287, dist_ts=1697617288081, commit_ts=1697617288563, recv_ts=1697617276934
+[2023-10-18 08:21:16.938] [info] SPBcastCommit blockid=9000042, latency=1527
+[2023-10-18 08:21:16.938] [info] SPBcastCommit block=9000042, proposal_ts=1697617275411, dist_ts=1697617288093, commit_ts=1697617288596, recv_ts=1697617276938
+[2023-10-18 08:21:16.939] [info] SPBcastCommit blockid=9000043, latency=1189
+[2023-10-18 08:21:16.939] [info] SPBcastCommit block=9000043, proposal_ts=1697617275750, dist_ts=1697617274160, commit_ts=1697617274670, recv_ts=1697617276939
+[2023-10-18 08:21:17.034] [info] LocalCommit blockid=9000044, latency=971
+[2023-10-18 08:21:17.268] [info] SPBcastCommit blockid=9000044, latency=1205
+[2023-10-18 08:21:17.268] [info] SPBcastCommit block=9000044, proposal_ts=1697617276063, dist_ts=1697617276651, commit_ts=1697617277391, recv_ts=1697617277268
+[2023-10-18 08:21:17.628] [info] SPBcastCommit blockid=9000045, latency=1536
+[2023-10-18 08:21:17.628] [info] SPBcastCommit block=9000045, proposal_ts=1697617276092, dist_ts=1697617277285, commit_ts=1697617277782, recv_ts=1697617277628
+[2023-10-18 08:21:17.667] [info] SPBcastCommit blockid=9000045, latency=1575
+[2023-10-18 08:21:17.668] [info] SPBcastCommit block=9000045, proposal_ts=1697617276092, dist_ts=1697617268787, commit_ts=1697617269287, recv_ts=1697617277667
+[2023-10-18 08:21:17.670] [info] SPBcastCommit blockid=9000046, latency=1392
+[2023-10-18 08:21:17.670] [info] SPBcastCommit block=9000046, proposal_ts=1697617276278, dist_ts=1697617268804, commit_ts=1697617269356, recv_ts=1697617277670
+[2023-10-18 08:21:17.788] [info] SPBcastCommit blockid=9000048, latency=1123
+[2023-10-18 08:21:17.789] [info] SPBcastCommit block=9000048, proposal_ts=1697617276665, dist_ts=1697617279664, commit_ts=1697617280245, recv_ts=1697617277788
+[2023-10-18 08:21:17.836] [info] SPBcastCommit blockid=9000046, latency=1558
+[2023-10-18 08:21:17.836] [info] SPBcastCommit block=9000046, proposal_ts=1697617276278, dist_ts=1697617286307, commit_ts=1697617286864, recv_ts=1697617277836
+[2023-10-18 08:21:17.838] [info] SPBcastCommit blockid=9000047, latency=1550
+[2023-10-18 08:21:17.838] [info] SPBcastCommit block=9000047, proposal_ts=1697617276288, dist_ts=1697617286330, commit_ts=1697617286896, recv_ts=1697617277838
+[2023-10-18 08:21:17.840] [info] SPBcastCommit blockid=9000047, latency=1552
+[2023-10-18 08:21:17.840] [info] SPBcastCommit block=9000047, proposal_ts=1697617276288, dist_ts=1697617274358, commit_ts=1697617274933, recv_ts=1697617277840
+[2023-10-18 08:21:17.848] [info] SPBcastCommit blockid=9000048, latency=1183
+[2023-10-18 08:21:17.848] [info] SPBcastCommit block=9000048, proposal_ts=1697617276665, dist_ts=1697617274364, commit_ts=1697617274958, recv_ts=1697617277848
+[2023-10-18 08:21:18.437] [info] SPBcastCommit blockid=9000050, latency=1498
+[2023-10-18 08:21:18.438] [info] SPBcastCommit block=9000050, proposal_ts=1697617276939, dist_ts=1697617281648, commit_ts=1697617282083, recv_ts=1697617278437
+[2023-10-18 08:21:18.496] [info] SPBcastCommit blockid=9000050, latency=1557
+[2023-10-18 08:21:18.496] [info] SPBcastCommit block=9000050, proposal_ts=1697617276939, dist_ts=1697617289757, commit_ts=1697617290200, recv_ts=1697617278496
+[2023-10-18 08:21:18.499] [info] SPBcastCommit blockid=9000051, latency=1484
+[2023-10-18 08:21:18.499] [info] SPBcastCommit block=9000051, proposal_ts=1697617277015, dist_ts=1697617289773, commit_ts=1697617290270, recv_ts=1697617278499
+[2023-10-18 08:21:18.507] [info] SPBcastCommit blockid=9000051, latency=1492
+[2023-10-18 08:21:18.508] [info] SPBcastCommit block=9000051, proposal_ts=1697617277015, dist_ts=1697617275819, commit_ts=1697617276317, recv_ts=1697617278507
+[2023-10-18 08:21:18.577] [info] LocalCommit blockid=9000052, latency=939
+[2023-10-18 08:21:18.670] [info] LocalCommit blockid=9000053, latency=987
+[2023-10-18 08:21:18.786] [info] SPBcastCommit blockid=9000052, latency=1148
+[2023-10-18 08:21:18.786] [info] SPBcastCommit block=9000052, proposal_ts=1697617277638, dist_ts=1697617275920, commit_ts=1697617276559, recv_ts=1697617278786
+[2023-10-18 08:21:18.789] [info] server watchdog
+[2023-10-18 08:21:18.839] [info] SPBcastCommit blockid=9000053, latency=1156
+[2023-10-18 08:21:18.839] [info] SPBcastCommit block=9000053, proposal_ts=1697617277683, dist_ts=1697617278077, commit_ts=1697617279010, recv_ts=1697617278839
+[2023-10-18 08:21:19.219] [info] SPBcastCommit blockid=9000054, latency=1417
+[2023-10-18 08:21:19.219] [info] SPBcastCommit block=9000054, proposal_ts=1697617277802, dist_ts=1697617278916, commit_ts=1697617279347, recv_ts=1697617279219
+[2023-10-18 08:21:19.227] [info] SPBcastCommit blockid=9000055, latency=1380
+[2023-10-18 08:21:19.227] [info] SPBcastCommit block=9000055, proposal_ts=1697617277847, dist_ts=1697617287936, commit_ts=1697617288390, recv_ts=1697617279227
+[2023-10-18 08:21:19.236] [info] SPBcastCommit blockid=9000054, latency=1434
+[2023-10-18 08:21:19.236] [info] SPBcastCommit block=9000054, proposal_ts=1697617277802, dist_ts=1697617270416, commit_ts=1697617270842, recv_ts=1697617279236
+[2023-10-18 08:21:19.238] [info] SPBcastCommit blockid=9000055, latency=1391
+[2023-10-18 08:21:19.238] [info] SPBcastCommit block=9000055, proposal_ts=1697617277847, dist_ts=1697617270432, commit_ts=1697617270861, recv_ts=1697617279238
+[2023-10-18 08:21:19.768] [info] SPBcastCommit blockid=9000058, latency=1219
+[2023-10-18 08:21:19.768] [info] SPBcastCommit block=9000058, proposal_ts=1697617278549, dist_ts=1697617281842, commit_ts=1697617282228, recv_ts=1697617279768
+[2023-10-18 08:21:19.788] [info] SPBcastCommit blockid=9000059, latency=1143
+[2023-10-18 08:21:19.788] [info] SPBcastCommit block=9000059, proposal_ts=1697617278645, dist_ts=1697617291142, commit_ts=1697617291535, recv_ts=1697617279788
+[2023-10-18 08:21:19.813] [info] SPBcastCommit blockid=9000058, latency=1264
+[2023-10-18 08:21:19.813] [info] SPBcastCommit block=9000058, proposal_ts=1697617278549, dist_ts=1697617283015, commit_ts=1697617283402, recv_ts=1697617279813
+[2023-10-18 08:21:19.817] [info] SPBcastCommit blockid=9000059, latency=1172
+[2023-10-18 08:21:19.817] [info] SPBcastCommit block=9000059, proposal_ts=1697617278645, dist_ts=1697617283038, commit_ts=1697617283423, recv_ts=1697617279817
+[2023-10-18 08:21:20.120] [info] LocalCommit blockid=9000061, latency=879
+[2023-10-18 08:21:20.301] [info] SPBcastCommit blockid=9000060, latency=1071
+[2023-10-18 08:21:20.301] [info] SPBcastCommit block=9000060, proposal_ts=1697617279230, dist_ts=1697617291644, commit_ts=1697617292036, recv_ts=1697617280301
+[2023-10-18 08:21:20.347] [info] SPBcastCommit blockid=9000060, latency=1117
+[2023-10-18 08:21:20.347] [info] SPBcastCommit block=9000060, proposal_ts=1697617279230, dist_ts=1697617277679, commit_ts=1697617278077, recv_ts=1697617280347
+[2023-10-18 08:21:20.352] [info] SPBcastCommit blockid=9000061, latency=1111
+[2023-10-18 08:21:20.352] [info] SPBcastCommit block=9000061, proposal_ts=1697617279241, dist_ts=1697617277693, commit_ts=1697617278097, recv_ts=1697617280352
+[2023-10-18 08:21:20.441] [info] LocalCommit blockid=9000062, latency=661
+[2023-10-18 08:21:20.688] [info] SPBcastCommit blockid=9000063, latency=888
+[2023-10-18 08:21:20.688] [info] SPBcastCommit block=9000063, proposal_ts=1697617279800, dist_ts=1697617271908, commit_ts=1697617272324, recv_ts=1697617280688
+[2023-10-18 08:21:20.699] [info] SPBcastCommit blockid=9000062, latency=919
+[2023-10-18 08:21:20.699] [info] SPBcastCommit block=9000062, proposal_ts=1697617279780, dist_ts=1697617280390, commit_ts=1697617280783, recv_ts=1697617280699
+[2023-10-18 08:21:20.704] [info] SPBcastCommit blockid=9000063, latency=904
+[2023-10-18 08:21:20.704] [info] SPBcastCommit block=9000063, proposal_ts=1697617279800, dist_ts=1697617280407, commit_ts=1697617280804, recv_ts=1697617280704
+[2023-10-18 08:21:20.788] [info] tx:953 | pb:8 | cb:60
+[2023-10-18 08:21:20.789] [info] server watchdog
+[2023-10-18 08:21:21.028] [info] SPBcastCommit blockid=9000064, latency=929
+[2023-10-18 08:21:21.028] [info] SPBcastCommit block=9000064, proposal_ts=1697617280099, dist_ts=1697617272250, commit_ts=1697617272650, recv_ts=1697617281028
+[2023-10-18 08:21:21.054] [info] SPBcastCommit blockid=9000065, latency=742
+[2023-10-18 08:21:21.054] [info] SPBcastCommit block=9000065, proposal_ts=1697617280312, dist_ts=1697617277814, commit_ts=1697617278258, recv_ts=1697617281054
+[2023-10-18 08:21:21.064] [info] SPBcastCommit blockid=9000064, latency=965
+[2023-10-18 08:21:21.065] [info] SPBcastCommit block=9000064, proposal_ts=1697617280099, dist_ts=1697617289755, commit_ts=1697617290158, recv_ts=1697617281064
+[2023-10-18 08:21:21.070] [info] SPBcastCommit blockid=9000065, latency=758
+[2023-10-18 08:21:21.070] [info] SPBcastCommit block=9000065, proposal_ts=1697617280312, dist_ts=1697617289788, commit_ts=1697617290229, recv_ts=1697617281070
+[2023-10-18 08:21:21.301] [info] SPBcastCommit blockid=9000066, latency=886
+[2023-10-18 08:21:21.301] [info] SPBcastCommit block=9000066, proposal_ts=1697617280415, dist_ts=1697617283407, commit_ts=1697617283767, recv_ts=1697617281301
+[2023-10-18 08:21:21.302] [info] SPBcastCommit blockid=9000066, latency=887
+[2023-10-18 08:21:21.302] [info] SPBcastCommit block=9000066, proposal_ts=1697617280415, dist_ts=1697617278110, commit_ts=1697617278477, recv_ts=1697617281302
+[2023-10-18 08:21:21.511] [info] SPBcastCommit blockid=9000067, latency=809
+[2023-10-18 08:21:21.511] [info] SPBcastCommit block=9000067, proposal_ts=1697617280702, dist_ts=1697617280859, commit_ts=1697617285142, recv_ts=1697617281511
+[2023-10-18 08:21:21.513] [info] SPBcastCommit blockid=9000067, latency=811
+[2023-10-18 08:21:21.513] [info] SPBcastCommit block=9000067, proposal_ts=1697617280702, dist_ts=1697617280859, commit_ts=1697617283958, recv_ts=1697617281513
+[2023-10-18 08:21:21.741] [info] SPBcastCommit blockid=9000068, latency=701
+[2023-10-18 08:21:21.741] [info] SPBcastCommit block=9000068, proposal_ts=1697617281040, dist_ts=1697617285003, commit_ts=1697617285375, recv_ts=1697617281741
+[2023-10-18 08:21:21.779] [info] SPBcastCommit blockid=9000069, latency=713
+[2023-10-18 08:21:21.779] [info] SPBcastCommit block=9000069, proposal_ts=1697617281066, dist_ts=1697617279202, commit_ts=1697617279581, recv_ts=1697617281779
+[2023-10-18 08:21:21.799] [info] SPBcastCommit blockid=9000068, latency=759
+[2023-10-18 08:21:21.799] [info] SPBcastCommit block=9000068, proposal_ts=1697617281040, dist_ts=1697617293114, commit_ts=1697617293494, recv_ts=1697617281799
+[2023-10-18 08:21:21.802] [info] SPBcastCommit blockid=9000069, latency=736
+[2023-10-18 08:21:21.802] [info] SPBcastCommit block=9000069, proposal_ts=1697617281066, dist_ts=1697617293150, commit_ts=1697617293528, recv_ts=1697617281802
+[2023-10-18 08:21:21.898] [info] LocalCommit blockid=9000070, latency=583
+[2023-10-18 08:21:22.078] [info] LocalCommit blockid=9000071, latency=555
+[2023-10-18 08:21:22.117] [info] SPBcastCommit blockid=9000070, latency=802
+[2023-10-18 08:21:22.117] [info] SPBcastCommit block=9000070, proposal_ts=1697617281315, dist_ts=1697617279496, commit_ts=1697617279893, recv_ts=1697617282117
+[2023-10-18 08:21:22.289] [info] SPBcastCommit blockid=9000071, latency=766
+[2023-10-18 08:21:22.289] [info] SPBcastCommit block=9000071, proposal_ts=1697617281523, dist_ts=1697617282037, commit_ts=1697617282427, recv_ts=1697617282289
+[2023-10-18 08:21:22.583] [info] SPBcastCommit blockid=9000072, latency=833
+[2023-10-18 08:21:22.583] [info] SPBcastCommit block=9000072, proposal_ts=1697617281750, dist_ts=1697617282303, commit_ts=1697617282718, recv_ts=1697617282583
+[2023-10-18 08:21:22.617] [info] SPBcastCommit blockid=9000073, latency=828
+[2023-10-18 08:21:22.617] [info] SPBcastCommit block=9000073, proposal_ts=1697617281789, dist_ts=1697617291322, commit_ts=1697617291791, recv_ts=1697617282617
+[2023-10-18 08:21:22.624] [info] SPBcastCommit blockid=9000072, latency=874
+[2023-10-18 08:21:22.624] [info] SPBcastCommit block=9000072, proposal_ts=1697617281750, dist_ts=1697617273805, commit_ts=1697617274214, recv_ts=1697617282624
+[2023-10-18 08:21:22.629] [info] SPBcastCommit blockid=9000073, latency=840
+[2023-10-18 08:21:22.629] [info] SPBcastCommit block=9000073, proposal_ts=1697617281789, dist_ts=1697617273822, commit_ts=1697617274285, recv_ts=1697617282629
+[2023-10-18 08:21:22.789] [info] server watchdog
+[2023-10-18 08:21:22.960] [info] SPBcastCommit blockid=9000075, latency=905
+[2023-10-18 08:21:22.960] [info] SPBcastCommit block=9000075, proposal_ts=1697617282055, dist_ts=1697617285040, commit_ts=1697617285438, recv_ts=1697617282960
+[2023-10-18 08:21:22.962] [info] SPBcastCommit blockid=9000075, latency=907
+[2023-10-18 08:21:22.962] [info] SPBcastCommit block=9000075, proposal_ts=1697617282055, dist_ts=1697617279744, commit_ts=1697617280136, recv_ts=1697617282962
+[2023-10-18 08:21:23.269] [info] SPBcastCommit blockid=9000076, latency=671
+[2023-10-18 08:21:23.269] [info] SPBcastCommit block=9000076, proposal_ts=1697617282598, dist_ts=1697617285369, commit_ts=1697617285770, recv_ts=1697617283269
+[2023-10-18 08:21:23.355] [info] SPBcastCommit blockid=9000077, latency=725
+[2023-10-18 08:21:23.355] [info] SPBcastCommit block=9000077, proposal_ts=1697617282630, dist_ts=1697617294713, commit_ts=1697617295079, recv_ts=1697617283355
+[2023-10-18 08:21:23.378] [info] SPBcastCommit blockid=9000076, latency=780
+[2023-10-18 08:21:23.378] [info] SPBcastCommit block=9000076, proposal_ts=1697617282598, dist_ts=1697617286541, commit_ts=1697617286945, recv_ts=1697617283378
+[2023-10-18 08:21:23.382] [info] SPBcastCommit blockid=9000077, latency=752
+[2023-10-18 08:21:23.382] [info] SPBcastCommit block=9000077, proposal_ts=1697617282630, dist_ts=1697617286604, commit_ts=1697617286967, recv_ts=1697617283382
+[2023-10-18 08:21:23.650] [info] SPBcastCommit blockid=9000078, latency=681
+[2023-10-18 08:21:23.650] [info] SPBcastCommit block=9000078, proposal_ts=1697617282969, dist_ts=1697617295019, commit_ts=1697617295381, recv_ts=1697617283650
+[2023-10-18 08:21:23.651] [info] SPBcastCommit blockid=9000078, latency=682
+[2023-10-18 08:21:23.651] [info] SPBcastCommit block=9000078, proposal_ts=1697617282969, dist_ts=1697617281055, commit_ts=1697617281426, recv_ts=1697617283651
+[2023-10-18 08:21:23.773] [info] LocalCommit blockid=9000079, latency=490
+[2023-10-18 08:21:23.974] [info] LocalCommit blockid=9000080, latency=604
+[2023-10-18 08:21:24.000] [info] SPBcastCommit blockid=9000079, latency=717
+[2023-10-18 08:21:24.000] [info] SPBcastCommit block=9000079, proposal_ts=1697617283283, dist_ts=1697617281358, commit_ts=1697617281766, recv_ts=1697617284000
+[2023-10-18 08:21:24.212] [info] SPBcastCommit blockid=9000081, latency=549
+[2023-10-18 08:21:24.212] [info] SPBcastCommit block=9000081, proposal_ts=1697617283663, dist_ts=1697617275596, commit_ts=1697617275852, recv_ts=1697617284212
+[2023-10-18 08:21:24.226] [info] SPBcastCommit blockid=9000080, latency=856
+[2023-10-18 08:21:24.226] [info] SPBcastCommit block=9000080, proposal_ts=1697617283370, dist_ts=1697617283902, commit_ts=1697617284322, recv_ts=1697617284226
+[2023-10-18 08:21:24.227] [info] SPBcastCommit blockid=9000081, latency=564
+[2023-10-18 08:21:24.227] [info] SPBcastCommit block=9000081, proposal_ts=1697617283663, dist_ts=1697617284095, commit_ts=1697617284354, recv_ts=1697617284227
+[2023-10-18 08:21:24.573] [info] SPBcastCommit blockid=9000082, latency=821
+[2023-10-18 08:21:24.573] [info] SPBcastCommit block=9000082, proposal_ts=1697617283752, dist_ts=1697617293295, commit_ts=1697617293718, recv_ts=1697617284573
+[2023-10-18 08:21:24.576] [info] SPBcastCommit blockid=9000082, latency=824
+[2023-10-18 08:21:24.576] [info] SPBcastCommit block=9000082, proposal_ts=1697617283752, dist_ts=1697617275791, commit_ts=1697617276225, recv_ts=1697617284576
+[2023-10-18 08:21:24.776] [info] SPBcastCommit blockid=9000083, latency=816
+[2023-10-18 08:21:24.776] [info] SPBcastCommit block=9000083, proposal_ts=1697617283960, dist_ts=1697617293484, commit_ts=1697617293911, recv_ts=1697617284776
+[2023-10-18 08:21:24.789] [info] tx:938 | pb:8 | cb:79
+[2023-10-18 08:21:24.789] [info] server watchdog
+[2023-10-18 08:21:24.809] [info] SPBcastCommit blockid=9000083, latency=849
+[2023-10-18 08:21:24.809] [info] SPBcastCommit block=9000083, proposal_ts=1697617283960, dist_ts=1697617281513, commit_ts=1697617281933, recv_ts=1697617284809
+[2023-10-18 08:21:24.814] [info] SPBcastCommit blockid=9000084, latency=588
+[2023-10-18 08:21:24.814] [info] SPBcastCommit block=9000084, proposal_ts=1697617284226, dist_ts=1697617281704, commit_ts=1697617282047, recv_ts=1697617284814
+[2023-10-18 08:21:24.855] [info] SPBcastCommit blockid=9000084, latency=629
+[2023-10-18 08:21:24.855] [info] SPBcastCommit block=9000084, proposal_ts=1697617284226, dist_ts=1697617287000, commit_ts=1697617287340, recv_ts=1697617284855
+[2023-10-18 08:21:25.270] [info] SPBcastCommit blockid=9000085, latency=686
+[2023-10-18 08:21:25.270] [info] SPBcastCommit block=9000085, proposal_ts=1697617284584, dist_ts=1697617288511, commit_ts=1697617288910, recv_ts=1697617285270
+[2023-10-18 08:21:25.270] [info] SPBcastCommit blockid=9000085, latency=686
+[2023-10-18 08:21:25.270] [info] SPBcastCommit block=9000085, proposal_ts=1697617284584, dist_ts=1697617287339, commit_ts=1697617287734, recv_ts=1697617285270
+[2023-10-18 08:21:25.481] [info] SPBcastCommit blockid=9000086, latency=694
+[2023-10-18 08:21:25.481] [info] SPBcastCommit block=9000086, proposal_ts=1697617284787, dist_ts=1697617288723, commit_ts=1697617289114, recv_ts=1697617285481
+[2023-10-18 08:21:25.520] [info] SPBcastCommit blockid=9000087, latency=695
+[2023-10-18 08:21:25.520] [info] SPBcastCommit block=9000087, proposal_ts=1697617284825, dist_ts=1697617282958, commit_ts=1697617283328, recv_ts=1697617285520
+[2023-10-18 08:21:25.535] [info] SPBcastCommit blockid=9000086, latency=748
+[2023-10-18 08:21:25.535] [info] SPBcastCommit block=9000086, proposal_ts=1697617284787, dist_ts=1697617296835, commit_ts=1697617297236, recv_ts=1697617285535
+[2023-10-18 08:21:25.537] [info] SPBcastCommit blockid=9000087, latency=712
+[2023-10-18 08:21:25.537] [info] SPBcastCommit block=9000087, proposal_ts=1697617284825, dist_ts=1697617296914, commit_ts=1697617297281, recv_ts=1697617285537
+[2023-10-18 08:21:25.760] [info] LocalCommit blockid=9000088, latency=477
+[2023-10-18 08:21:25.837] [info] LocalCommit blockid=9000089, latency=344
+[2023-10-18 08:21:25.971] [info] SPBcastCommit blockid=9000088, latency=688
+[2023-10-18 08:21:25.971] [info] SPBcastCommit block=9000088, proposal_ts=1697617285283, dist_ts=1697617283358, commit_ts=1697617283740, recv_ts=1697617285971
+[2023-10-18 08:21:26.053] [info] SPBcastCommit blockid=9000089, latency=559
+[2023-10-18 08:21:26.053] [info] SPBcastCommit block=9000089, proposal_ts=1697617285493, dist_ts=1697617285935, commit_ts=1697617286196, recv_ts=1697617286052
+[2023-10-18 08:21:26.057] [info] SPBcastCommit blockid=9000090, latency=523
+[2023-10-18 08:21:26.057] [info] SPBcastCommit block=9000090, proposal_ts=1697617285534, dist_ts=1697617285680, commit_ts=1697617286358, recv_ts=1697617286057
+[2023-10-18 08:21:26.225] [info] SPBcastCommit blockid=9000090, latency=691
+[2023-10-18 08:21:26.225] [info] SPBcastCommit block=9000090, proposal_ts=1697617285534, dist_ts=1697617285680, commit_ts=1697617277857, recv_ts=1697617286225
+[2023-10-18 08:21:26.506] [info] SPBcastCommit blockid=9000091, latency=772
+[2023-10-18 08:21:26.506] [info] SPBcastCommit block=9000091, proposal_ts=1697617285734, dist_ts=1697617295253, commit_ts=1697617295639, recv_ts=1697617286506
+[2023-10-18 08:21:26.509] [info] SPBcastCommit blockid=9000091, latency=775
+[2023-10-18 08:21:26.509] [info] SPBcastCommit block=9000091, proposal_ts=1697617285734, dist_ts=1697617277755, commit_ts=1697617278129, recv_ts=1697617286509
+[2023-10-18 08:21:26.695] [info] SPBcastCommit blockid=9000092, latency=877
+[2023-10-18 08:21:26.695] [info] SPBcastCommit block=9000092, proposal_ts=1697617285818, dist_ts=1697617283386, commit_ts=1697617283806, recv_ts=1697617286695
+[2023-10-18 08:21:26.708] [info] SPBcastCommit blockid=9000093, latency=638
+[2023-10-18 08:21:26.708] [info] SPBcastCommit block=9000093, proposal_ts=1697617286070, dist_ts=1697617283626, commit_ts=1697617283986, recv_ts=1697617286708
+[2023-10-18 08:21:26.784] [info] SPBcastCommit blockid=9000093, latency=714
+[2023-10-18 08:21:26.784] [info] SPBcastCommit block=9000093, proposal_ts=1697617286070, dist_ts=1697617288922, commit_ts=1697617289264, recv_ts=1697617286784
+[2023-10-18 08:21:26.789] [info] server watchdog
+[2023-10-18 08:21:27.169] [info] SPBcastCommit blockid=9000094, latency=650
+[2023-10-18 08:21:27.169] [info] SPBcastCommit block=9000094, proposal_ts=1697617286519, dist_ts=1697617289275, commit_ts=1697617289646, recv_ts=1697617287169
+[2023-10-18 08:21:27.170] [info] SPBcastCommit blockid=9000094, latency=651
+[2023-10-18 08:21:27.170] [info] SPBcastCommit block=9000094, proposal_ts=1697617286519, dist_ts=1697617290447, commit_ts=1697617290824, recv_ts=1697617287170
+[2023-10-18 08:21:27.450] [info] SPBcastCommit blockid=9000095, latency=743
+[2023-10-18 08:21:27.450] [info] SPBcastCommit block=9000095, proposal_ts=1697617286707, dist_ts=1697617290689, commit_ts=1697617291088, recv_ts=1697617287450
+[2023-10-18 08:21:27.475] [info] SPBcastCommit blockid=9000096, latency=759
+[2023-10-18 08:21:27.475] [info] SPBcastCommit block=9000096, proposal_ts=1697617286716, dist_ts=1697617284860, commit_ts=1697617285254, recv_ts=1697617287475
+[2023-10-18 08:21:27.497] [info] SPBcastCommit blockid=9000095, latency=790
+[2023-10-18 08:21:27.497] [info] SPBcastCommit block=9000095, proposal_ts=1697617286707, dist_ts=1697617298797, commit_ts=1697617299189, recv_ts=1697617287497
+[2023-10-18 08:21:27.500] [info] SPBcastCommit blockid=9000096, latency=784
+[2023-10-18 08:21:27.500] [info] SPBcastCommit block=9000096, proposal_ts=1697617286716, dist_ts=1697617298815, commit_ts=1697617299209, recv_ts=1697617287500
+[2023-10-18 08:21:27.627] [info] LocalCommit blockid=9000097, latency=446
+[2023-10-18 08:21:27.853] [info] SPBcastCommit blockid=9000097, latency=672
+[2023-10-18 08:21:27.853] [info] SPBcastCommit block=9000097, proposal_ts=1697617287181, dist_ts=1697617285259, commit_ts=1697617285622, recv_ts=1697617287853
+[2023-10-18 08:21:27.949] [info] LocalCommit blockid=9000098, latency=483
+[2023-10-18 08:21:28.171] [info] SPBcastCommit blockid=9000098, latency=705
+[2023-10-18 08:21:28.171] [info] SPBcastCommit block=9000098, proposal_ts=1697617287466, dist_ts=1697617287920, commit_ts=1697617288298, recv_ts=1697617288171
+[2023-10-18 08:21:28.291] [info] SPBcastCommit blockid=9000099, latency=806
+[2023-10-18 08:21:28.291] [info] SPBcastCommit block=9000099, proposal_ts=1697617287485, dist_ts=1697617279454, commit_ts=1697617279906, recv_ts=1697617288291
+[2023-10-18 08:21:28.505] [info] SPBcastCommit blockid=9000100, latency=892
+[2023-10-18 08:21:28.505] [info] SPBcastCommit block=9000100, proposal_ts=1697617287613, dist_ts=1697617279725, commit_ts=1697617280133, recv_ts=1697617288505
+[2023-10-18 08:21:28.511] [info] SPBcastCommit blockid=9000100, latency=898
+[2023-10-18 08:21:28.511] [info] SPBcastCommit block=9000100, proposal_ts=1697617287613, dist_ts=1697617297229, commit_ts=1697617297639, recv_ts=1697617288511
+[2023-10-18 08:21:28.519] [info] SPBcastCommit blockid=9000101, latency=593
+[2023-10-18 08:21:28.520] [info] SPBcastCommit block=9000101, proposal_ts=1697617287926, dist_ts=1697617297419, commit_ts=1697617297826, recv_ts=1697617288519
+[2023-10-18 08:21:28.698] [info] SPBcastCommit blockid=9000101, latency=772
+[2023-10-18 08:21:28.698] [info] SPBcastCommit block=9000101, proposal_ts=1697617287926, dist_ts=1697617285445, commit_ts=1697617285855, recv_ts=1697617288698
+[2023-10-18 08:21:28.789] [info] tx:920 | pb:8 | cb:97
+[2023-10-18 08:21:28.789] [info] server watchdog
+[2023-10-18 08:21:28.952] [info] SPBcastCommit blockid=9000102, latency=651
+[2023-10-18 08:21:28.952] [info] SPBcastCommit block=9000102, proposal_ts=1697617288301, dist_ts=1697617291048, commit_ts=1697617291417, recv_ts=1697617288952
+[2023-10-18 08:21:28.954] [info] SPBcastCommit blockid=9000102, latency=653
+[2023-10-18 08:21:28.954] [info] SPBcastCommit block=9000102, proposal_ts=1697617288301, dist_ts=1697617285752, commit_ts=1697617286137, recv_ts=1697617288954
+[2023-10-18 08:21:29.236] [info] SPBcastCommit blockid=9000103, latency=719
+[2023-10-18 08:21:29.236] [info] SPBcastCommit block=9000103, proposal_ts=1697617288517, dist_ts=1697617291314, commit_ts=1697617291700, recv_ts=1697617289236
+[2023-10-18 08:21:29.252] [info] SPBcastCommit blockid=9000104, latency=723
+[2023-10-18 08:21:29.252] [info] SPBcastCommit block=9000104, proposal_ts=1697617288529, dist_ts=1697617300608, commit_ts=1697617300994, recv_ts=1697617289252
+[2023-10-18 08:21:29.280] [info] SPBcastCommit blockid=9000103, latency=763
+[2023-10-18 08:21:29.280] [info] SPBcastCommit block=9000103, proposal_ts=1697617288517, dist_ts=1697617292487, commit_ts=1697617292870, recv_ts=1697617289280
+[2023-10-18 08:21:29.284] [info] SPBcastCommit blockid=9000104, latency=755
+[2023-10-18 08:21:29.284] [info] SPBcastCommit block=9000104, proposal_ts=1697617288529, dist_ts=1697617292500, commit_ts=1697617292902, recv_ts=1697617289284
+[2023-10-18 08:21:29.633] [info] SPBcastCommit blockid=9000105, latency=666
+[2023-10-18 08:21:29.633] [info] SPBcastCommit block=9000105, proposal_ts=1697617288967, dist_ts=1697617300991, commit_ts=1697617301370, recv_ts=1697617289633
+[2023-10-18 08:21:29.634] [info] SPBcastCommit blockid=9000105, latency=667
+[2023-10-18 08:21:29.634] [info] SPBcastCommit block=9000105, proposal_ts=1697617288967, dist_ts=1697617287041, commit_ts=1697617287417, recv_ts=1697617289634
+[2023-10-18 08:21:29.757] [info] LocalCommit blockid=9000106, latency=510
+[2023-10-18 08:21:29.779] [info] LocalCommit blockid=9000107, latency=512
+[2023-10-18 08:21:29.985] [info] SPBcastCommit blockid=9000106, latency=738
+[2023-10-18 08:21:29.986] [info] SPBcastCommit block=9000106, proposal_ts=1697617289247, dist_ts=1697617287367, commit_ts=1697617287749, recv_ts=1697617289985
+[2023-10-18 08:21:30.018] [info] SPBcastCommit blockid=9000107, latency=751
+[2023-10-18 08:21:30.018] [info] SPBcastCommit block=9000107, proposal_ts=1697617289267, dist_ts=1697617289403, commit_ts=1697617290134, recv_ts=1697617290018
+[2023-10-18 08:21:30.270] [info] SPBcastCommit blockid=9000108, latency=625
+[2023-10-18 08:21:30.270] [info] SPBcastCommit block=9000108, proposal_ts=1697617289645, dist_ts=1697617290066, commit_ts=1697617290408, recv_ts=1697617290270
+[2023-10-18 08:21:30.270] [info] SPBcastCommit blockid=9000108, latency=625
+[2023-10-18 08:21:30.270] [info] SPBcastCommit block=9000108, proposal_ts=1697617289645, dist_ts=1697617281567, commit_ts=1697617281909, recv_ts=1697617290270
+[2023-10-18 08:21:30.596] [info] SPBcastCommit blockid=9000109, latency=859
+[2023-10-18 08:21:30.597] [info] SPBcastCommit block=9000109, proposal_ts=1697617289737, dist_ts=1697617281804, commit_ts=1697617282230, recv_ts=1697617290596
+[2023-10-18 08:21:30.612] [info] SPBcastCommit blockid=9000110, latency=847
+[2023-10-18 08:21:30.612] [info] SPBcastCommit block=9000110, proposal_ts=1697617289765, dist_ts=1697617287349, commit_ts=1697617287782, recv_ts=1697617290612
+[2023-10-18 08:21:30.620] [info] SPBcastCommit blockid=9000109, latency=883
+[2023-10-18 08:21:30.620] [info] SPBcastCommit block=9000109, proposal_ts=1697617289737, dist_ts=1697617299309, commit_ts=1697617299727, recv_ts=1697617290620
+[2023-10-18 08:21:30.624] [info] SPBcastCommit blockid=9000110, latency=859
+[2023-10-18 08:21:30.624] [info] SPBcastCommit block=9000110, proposal_ts=1697617289765, dist_ts=1697617299329, commit_ts=1697617299746, recv_ts=1697617290624
+[2023-10-18 08:21:30.789] [info] server watchdog
+[2023-10-18 08:21:30.925] [info] SPBcastCommit blockid=9000111, latency=642
+[2023-10-18 08:21:30.925] [info] SPBcastCommit block=9000111, proposal_ts=1697617290283, dist_ts=1697617293029, commit_ts=1697617293381, recv_ts=1697617290925
+[2023-10-18 08:21:30.931] [info] SPBcastCommit blockid=9000111, latency=648
+[2023-10-18 08:21:30.931] [info] SPBcastCommit block=9000111, proposal_ts=1697617290283, dist_ts=1697617287734, commit_ts=1697617288101, recv_ts=1697617290931
+[2023-10-18 08:21:31.276] [info] SPBcastCommit blockid=9000112, latency=669
+[2023-10-18 08:21:31.276] [info] SPBcastCommit block=9000112, proposal_ts=1697617290607, dist_ts=1697617293393, commit_ts=1697617293744, recv_ts=1697617291276
+[2023-10-18 08:21:31.328] [info] SPBcastCommit blockid=9000112, latency=721
+[2023-10-18 08:21:31.328] [info] SPBcastCommit block=9000112, proposal_ts=1697617290607, dist_ts=1697617294564, commit_ts=1697617294925, recv_ts=1697617291328
+[2023-10-18 08:21:31.332] [info] SPBcastCommit blockid=9000113, latency=709
+[2023-10-18 08:21:31.332] [info] SPBcastCommit block=9000113, proposal_ts=1697617290623, dist_ts=1697617294595, commit_ts=1697617295037, recv_ts=1697617291332
+[2023-10-18 08:21:31.398] [info] SPBcastCommit blockid=9000113, latency=775
+[2023-10-18 08:21:31.399] [info] SPBcastCommit block=9000113, proposal_ts=1697617290623, dist_ts=1697617302708, commit_ts=1697617303159, recv_ts=1697617291398
+[2023-10-18 08:21:31.617] [info] SPBcastCommit blockid=9000114, latency=680
+[2023-10-18 08:21:31.617] [info] SPBcastCommit block=9000114, proposal_ts=1697617290937, dist_ts=1697617303001, commit_ts=1697617303359, recv_ts=1697617291617
+[2023-10-18 08:21:31.618] [info] SPBcastCommit blockid=9000114, latency=681
+[2023-10-18 08:21:31.618] [info] SPBcastCommit block=9000114, proposal_ts=1697617290937, dist_ts=1697617289039, commit_ts=1697617289395, recv_ts=1697617291618
+[2023-10-18 08:21:31.771] [info] LocalCommit blockid=9000115, latency=479
+[2023-10-18 08:21:31.791] [info] LocalCommit blockid=9000116, latency=447
+[2023-10-18 08:21:32.006] [info] SPBcastCommit blockid=9000115, latency=714
+[2023-10-18 08:21:32.006] [info] SPBcastCommit block=9000115, proposal_ts=1697617291292, dist_ts=1697617289383, commit_ts=1697617289769, recv_ts=1697617292006
+[2023-10-18 08:21:32.031] [info] SPBcastCommit blockid=9000116, latency=687
+[2023-10-18 08:21:32.031] [info] SPBcastCommit block=9000116, proposal_ts=1697617291344, dist_ts=1697617291484, commit_ts=1697617292154, recv_ts=1697617292031
+[2023-10-18 08:21:32.407] [info] SPBcastCommit blockid=9000117, latency=780
+[2023-10-18 08:21:32.407] [info] SPBcastCommit block=9000117, proposal_ts=1697617291627, dist_ts=1697617292103, commit_ts=1697617292538, recv_ts=1697617292407
+[2023-10-18 08:21:32.410] [info] SPBcastCommit blockid=9000117, latency=783
+[2023-10-18 08:21:32.410] [info] SPBcastCommit block=9000117, proposal_ts=1697617291627, dist_ts=1697617283604, commit_ts=1697617284037, recv_ts=1697617292410
+[2023-10-18 08:21:32.641] [info] SPBcastCommit blockid=9000118, latency=895
+[2023-10-18 08:21:32.641] [info] SPBcastCommit block=9000118, proposal_ts=1697617291746, dist_ts=1697617283833, commit_ts=1697617284269, recv_ts=1697617292641
+[2023-10-18 08:21:32.653] [info] SPBcastCommit blockid=9000119, latency=875
+[2023-10-18 08:21:32.653] [info] SPBcastCommit block=9000119, proposal_ts=1697617291778, dist_ts=1697617289378, commit_ts=1697617289826, recv_ts=1697617292653
+[2023-10-18 08:21:32.666] [info] SPBcastCommit blockid=9000118, latency=920
+[2023-10-18 08:21:32.667] [info] SPBcastCommit block=9000118, proposal_ts=1697617291746, dist_ts=1697617301336, commit_ts=1697617301776, recv_ts=1697617292666
+[2023-10-18 08:21:32.672] [info] SPBcastCommit blockid=9000119, latency=894
+[2023-10-18 08:21:32.672] [info] SPBcastCommit block=9000119, proposal_ts=1697617291778, dist_ts=1697617301351, commit_ts=1697617301798, recv_ts=1697617292672
+[2023-10-18 08:21:32.789] [info] tx:905 | pb:8 | cb:115
+[2023-10-18 08:21:32.789] [info] server watchdog
+[2023-10-18 08:21:33.058] [info] SPBcastCommit blockid=9000120, latency=636
+[2023-10-18 08:21:33.058] [info] SPBcastCommit block=9000120, proposal_ts=1697617292422, dist_ts=1697617295175, commit_ts=1697617295526, recv_ts=1697617293058
+[2023-10-18 08:21:33.061] [info] SPBcastCommit blockid=9000120, latency=639
+[2023-10-18 08:21:33.061] [info] SPBcastCommit block=9000120, proposal_ts=1697617292422, dist_ts=1697617289885, commit_ts=1697617290239, recv_ts=1697617293061
+[2023-10-18 08:21:33.361] [info] SPBcastCommit blockid=9000121, latency=706
+[2023-10-18 08:21:33.361] [info] SPBcastCommit block=9000121, proposal_ts=1697617292655, dist_ts=1697617295441, commit_ts=1697617295838, recv_ts=1697617293361
+[2023-10-18 08:21:33.400] [info] SPBcastCommit blockid=9000122, latency=734
+[2023-10-18 08:21:33.400] [info] SPBcastCommit block=9000122, proposal_ts=1697617292666, dist_ts=1697617304752, commit_ts=1697617305155, recv_ts=1697617293400
+[2023-10-18 08:21:33.422] [info] SPBcastCommit blockid=9000121, latency=767
+[2023-10-18 08:21:33.422] [info] SPBcastCommit block=9000121, proposal_ts=1697617292655, dist_ts=1697617296614, commit_ts=1697617297010, recv_ts=1697617293422
+[2023-10-18 08:21:33.425] [info] SPBcastCommit blockid=9000122, latency=759
+[2023-10-18 08:21:33.425] [info] SPBcastCommit block=9000122, proposal_ts=1697617292666, dist_ts=1697617296643, commit_ts=1697617297042, recv_ts=1697617293425
+[2023-10-18 08:21:33.717] [info] LocalCommit blockid=9000124, latency=345
+[2023-10-18 08:21:33.722] [info] SPBcastCommit blockid=9000123, latency=654
+[2023-10-18 08:21:33.722] [info] SPBcastCommit block=9000123, proposal_ts=1697617293068, dist_ts=1697617305102, commit_ts=1697617305458, recv_ts=1697617293722
+[2023-10-18 08:21:33.725] [info] SPBcastCommit blockid=9000123, latency=657
+[2023-10-18 08:21:33.725] [info] SPBcastCommit block=9000123, proposal_ts=1697617293068, dist_ts=1697617291143, commit_ts=1697617291501, recv_ts=1697617293725
+[2023-10-18 08:21:33.880] [info] LocalCommit blockid=9000125, latency=468
+[2023-10-18 08:21:33.947] [info] SPBcastCommit blockid=9000124, latency=575
+[2023-10-18 08:21:33.947] [info] SPBcastCommit block=9000124, proposal_ts=1697617293372, dist_ts=1697617291468, commit_ts=1697617291714, recv_ts=1697617293947
+[2023-10-18 08:21:34.082] [info] SPBcastCommit blockid=9000125, latency=670
+[2023-10-18 08:21:34.082] [info] SPBcastCommit block=9000125, proposal_ts=1697617293412, dist_ts=1697617293555, commit_ts=1697617294223, recv_ts=1697617294082
+[2023-10-18 08:21:34.698] [info] SPBcastCommit blockid=9000127, latency=963
+[2023-10-18 08:21:34.698] [info] SPBcastCommit block=9000127, proposal_ts=1697617293735, dist_ts=1697617285901, commit_ts=1697617286338, recv_ts=1697617294698
+[2023-10-18 08:21:34.719] [info] SPBcastCommit blockid=9000128, latency=865
+[2023-10-18 08:21:34.719] [info] SPBcastCommit block=9000128, proposal_ts=1697617293854, dist_ts=1697617291456, commit_ts=1697617291884, recv_ts=1697617294719
+[2023-10-18 08:21:34.723] [info] SPBcastCommit blockid=9000127, latency=988
+[2023-10-18 08:21:34.723] [info] SPBcastCommit block=9000127, proposal_ts=1697617293735, dist_ts=1697617303406, commit_ts=1697617303826, recv_ts=1697617294723
+[2023-10-18 08:21:34.726] [info] SPBcastCommit blockid=9000128, latency=872
+[2023-10-18 08:21:34.726] [info] SPBcastCommit block=9000128, proposal_ts=1697617293854, dist_ts=1697617303428, commit_ts=1697617303846, recv_ts=1697617294726
+[2023-10-18 08:21:34.790] [info] server watchdog
+[2023-10-18 08:21:35.388] [info] SPBcastCommit blockid=9000129, latency=677
+[2023-10-18 08:21:35.388] [info] SPBcastCommit block=9000129, proposal_ts=1697617294711, dist_ts=1697617292206, commit_ts=1697617292549, recv_ts=1697617295388
+[2023-10-18 08:21:35.393] [info] SPBcastCommit blockid=9000130, latency=658
+[2023-10-18 08:21:35.393] [info] SPBcastCommit block=9000130, proposal_ts=1697617294735, dist_ts=1697617298711, commit_ts=1697617299055, recv_ts=1697617295393
+[2023-10-18 08:21:35.418] [info] SPBcastCommit blockid=9000129, latency=707
+[2023-10-18 08:21:35.418] [info] SPBcastCommit block=9000129, proposal_ts=1697617294711, dist_ts=1697617297507, commit_ts=1697617297830, recv_ts=1697617295418
+[2023-10-18 08:21:35.422] [info] SPBcastCommit blockid=9000130, latency=687
+[2023-10-18 08:21:35.422] [info] SPBcastCommit block=9000130, proposal_ts=1697617294735, dist_ts=1697617297539, commit_ts=1697617297893, recv_ts=1697617295422
+[2023-10-18 08:21:36.122] [info] SPBcastCommit blockid=9000131, latency=722
+[2023-10-18 08:21:36.122] [info] SPBcastCommit block=9000131, proposal_ts=1697617295400, dist_ts=1697617299363, commit_ts=1697617299750, recv_ts=1697617296122
+[2023-10-18 08:21:36.160] [info] SPBcastCommit blockid=9000132, latency=755
+[2023-10-18 08:21:36.160] [info] SPBcastCommit block=9000132, proposal_ts=1697617295405, dist_ts=1697617293530, commit_ts=1697617293940, recv_ts=1697617296160
+[2023-10-18 08:21:36.178] [info] SPBcastCommit blockid=9000131, latency=778
+[2023-10-18 08:21:36.178] [info] SPBcastCommit block=9000131, proposal_ts=1697617295400, dist_ts=1697617307469, commit_ts=1697617307861, recv_ts=1697617296178
+[2023-10-18 08:21:36.183] [info] SPBcastCommit blockid=9000132, latency=778
+[2023-10-18 08:21:36.183] [info] SPBcastCommit block=9000132, proposal_ts=1697617295405, dist_ts=1697617307486, commit_ts=1697617307882, recv_ts=1697617296183
+[2023-10-18 08:21:36.622] [info] LocalCommit blockid=9000133, latency=485
+[2023-10-18 08:21:36.680] [info] LocalCommit blockid=9000134, latency=509
+[2023-10-18 08:21:36.789] [info] tx:899 | pb:8 | cb:129
+[2023-10-18 08:21:36.790] [info] server watchdog
+[2023-10-18 08:21:36.884] [info] SPBcastCommit blockid=9000133, latency=747
+[2023-10-18 08:21:36.884] [info] SPBcastCommit block=9000133, proposal_ts=1697617296137, dist_ts=1697617294242, commit_ts=1697617294609, recv_ts=1697617296884
+[2023-10-18 08:21:36.898] [info] SPBcastCommit blockid=9000134, latency=727
+[2023-10-18 08:21:36.898] [info] SPBcastCommit block=9000134, proposal_ts=1697617296171, dist_ts=1697617296328, commit_ts=1697617297030, recv_ts=1697617296898
+[2023-10-18 08:21:37.305] [info] SPBcastCommit blockid=9000135, latency=710
+[2023-10-18 08:21:37.305] [info] SPBcastCommit block=9000135, proposal_ts=1697617296595, dist_ts=1697617297026, commit_ts=1697617297441, recv_ts=1697617297305
+[2023-10-18 08:21:37.336] [info] SPBcastCommit blockid=9000135, latency=741
+[2023-10-18 08:21:37.336] [info] SPBcastCommit block=9000135, proposal_ts=1697617296595, dist_ts=1697617288527, commit_ts=1697617288944, recv_ts=1697617297336
+[2023-10-18 08:21:37.339] [info] SPBcastCommit blockid=9000136, latency=680
+[2023-10-18 08:21:37.339] [info] SPBcastCommit block=9000136, proposal_ts=1697617296659, dist_ts=1697617288694, commit_ts=1697617289065, recv_ts=1697617297339
+[2023-10-18 08:21:37.416] [info] SPBcastCommit blockid=9000136, latency=757
+[2023-10-18 08:21:37.416] [info] SPBcastCommit block=9000136, proposal_ts=1697617296659, dist_ts=1697617306198, commit_ts=1697617306576, recv_ts=1697617297416
+[2023-10-18 08:21:38.084] [info] SPBcastCommit blockid=9000138, latency=734
+[2023-10-18 08:21:38.084] [info] SPBcastCommit block=9000138, proposal_ts=1697617297350, dist_ts=1697617300154, commit_ts=1697617300558, recv_ts=1697617298084
+[2023-10-18 08:21:38.094] [info] SPBcastCommit blockid=9000137, latency=774
+[2023-10-18 08:21:38.094] [info] SPBcastCommit block=9000137, proposal_ts=1697617297320, dist_ts=1697617306797, commit_ts=1697617307213, recv_ts=1697617298094
+[2023-10-18 08:21:38.109] [info] SPBcastCommit blockid=9000137, latency=789
+[2023-10-18 08:21:38.109] [info] SPBcastCommit block=9000137, proposal_ts=1697617297320, dist_ts=1697617294813, commit_ts=1697617295233, recv_ts=1697617298109
+[2023-10-18 08:21:38.112] [info] SPBcastCommit blockid=9000138, latency=762
+[2023-10-18 08:21:38.112] [info] SPBcastCommit block=9000138, proposal_ts=1697617297350, dist_ts=1697617294862, commit_ts=1697617295253, recv_ts=1697617298112
+[2023-10-18 08:21:38.790] [info] server watchdog
+[2023-10-18 08:21:40.789] [info] tx:895 | pb:8 | cb:133
+[2023-10-18 08:21:40.790] [info] server watchdog

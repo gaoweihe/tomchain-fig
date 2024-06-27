@@ -1,4 +1,0 @@
-*.log 
-*.out 
-log/*
-!log/.gitkeep
